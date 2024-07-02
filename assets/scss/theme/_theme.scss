@@ -140,11 +140,11 @@
 	typography css start 
 ---------------------------------*/
 body {
-	font-family: var(--tp-fonts-poppins);
-	font-size: 14px;
+	font-family: var(--ecom-body-font);
+	font-size: 17px;
 	font-weight: normal;
 	color: var(--tp-black);
-	line-height: 26px;
+	line-height: 28px;
 }
 
 a{
@@ -157,7 +157,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: var(--tp-fonts-muli);
+	font-family: var(--ecom-heading-font);
 	color: var(--tp-theme-sec-color);
 	margin-top: 0px;
 	font-weight: 700;
@@ -195,7 +195,7 @@ ul {
 }
 
 p {
-	font-family: var(--tp-ff-p);
+	font-family: var(--ecom-body-font);
 	font-size: 14px;
 	font-weight: 400;
 	color: var(--tp-text-body);

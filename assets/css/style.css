@@ -123,21 +123,22 @@
 /*----------------------------------------*/
 /*  1.1 Theme Default
 /*----------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Federo&display=swap");
 :root {
-  --tp-theme-color: red;
-  --tp-theme-sec-color: blue;
-  --tp-black: black;
-  --tp-white: white;
-  --tp-grey-color: #f6f6f6;
-  --tp-grey-color-2: #f6f6f6;
-  --tp-grey-color-3: #f6f6f6;
-  --tp-grey-color-4: #f6f6f6;
+  --ecom-theme-color: #0057FC;
+  --ecom-theme-sec-color: #FFE815;
+  --ecom-body-color: #57595C;
+  --ecom-nblue-color: #001C52;
+  --ecom-white: white;
+  --ecom-grey-color: #f6f6f6;
+  --ecom-grey-color-2: #f6f6f6;
+  --ecom-grey-color-3: #f6f6f6;
+  --ecom-grey-color-4: #f6f6f6;
 }
 
 :root {
-  --tp-fonts-poppins: "Poppins", sans-serif;
-  --tp-fonts-muli: "Muli", sans-serif;
+  --ecom-heading-font: "Federo", sans-serif;
+  --ecom-body-font:: "DM Sans",ans-serif;
 }
 
 * {
@@ -150,11 +151,11 @@
 	typography css start 
 ---------------------------------*/
 body {
-  font-family: var(--tp-fonts-poppins);
-  font-size: 14px;
+  font-family: var(--ecom-body-font);
+  font-size: 17px;
   font-weight: normal;
   color: var(--tp-black);
-  line-height: 26px;
+  line-height: 28px;
 }
 
 a {
@@ -167,7 +168,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--tp-fonts-muli);
+  font-family: var(--ecom-heading-font);
   color: var(--tp-theme-sec-color);
   margin-top: 0px;
   font-weight: 700;
@@ -204,7 +205,7 @@ ul {
 }
 
 p {
-  font-family: var(--tp-ff-p);
+  font-family: var(--ecom-body-font);
   font-size: 14px;
   font-weight: 400;
   color: var(--tp-text-body);
@@ -3572,10 +3573,6 @@ textarea {
 
 .pr-100 {
   padding-right: 100px;
-}
-
-body {
-  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
