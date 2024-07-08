@@ -3579,19 +3579,7 @@ textarea {
   position: absolute;
   left: 0;
   top: 0;
-}
-
-.header_logo_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0px;
-}
-
-.ed_main_menu nav ul li a {
-  color: #fff;
-  font-family: var(--ecom-header-font);
-  font-size: 14px;
+  width: 100%;
 }
 
 .ed_main_menu nav ul {
@@ -3599,16 +3587,64 @@ textarea {
   display: flex;
   align-items: center;
 }
-
 .ed_main_menu nav ul li {
-  display: block;
+  display: inline-block;
+  margin-right: 42px;
   padding: 36px 0px;
+  position: relative;
+  cursor: pointer;
+}
+.ed_main_menu nav ul li a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 0;
+  font-family: var(--ecom-heading-font);
+  display: inline-block;
+  transition: color 0.3s ease-in-out;
+}
+.ed_main_menu nav ul li .sub_menu {
+  position: absolute;
+  background-color: white;
+  flex-direction: column;
+  width: 213px;
+  top: 105%;
+  align-items: start;
+  padding: 12px;
+  gap: 5px;
+  /* visibility: hidden;
+  opacity: 0; */
+  transition: all 0.3s ease-in-out;
+}
+.ed_main_menu nav ul li .sub_menu li {
+  padding: 0;
+  margin-right: 0;
+  position: relative;
+  display: b;
+}
+.ed_main_menu nav ul li .sub_menu li a {
+  color: #000;
+}
+.ed_main_menu nav ul li .sub_menu li:hover a {
+  color: var(--ecom-theme-color);
+}
+.ed_main_menu nav ul li .sub_menu li .sub_menu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.ed_main_menu nav ul li:hover a {
+  color: var(--ecom-theme-sec-color);
+}
+.ed_main_menu nav ul li:hover .sub_menu {
+  visibility: visible;
+  opacity: 1;
+  top: 100%;
 }
 
 .ed_hero_section {
   width: 100%;
   height: 600px;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 /*# sourceMappingURL=style.css.map */

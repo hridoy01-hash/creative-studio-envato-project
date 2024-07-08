@@ -1,36 +1,75 @@
-@use '../../utils' as *;
-
+@use "../../utils" as *;
 // @___ header menu___@
-.transparent_header{
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-.header_logo_wrapper{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 0px;
+.transparent_header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
 }
 
-.ed_main_menu{
-  nav{
-    li {}
+.ed_main_menu nav {
+  & ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    & li {
+      display: inline-block;
+      margin-right: 42px;
+      padding: 36px 0px;
+      position: relative;
+      cursor: pointer;
+      & a {
+        color: #fff;
+        font-size: 14px;
+        line-height: 0;
+        font-family: var(--ecom-heading-font);
+        display: inline-block;
+        transition: color 0.3s ease-in-out;
+      }
+      & .sub_menu {
+        position: absolute;
+        background-color: white;
+        flex-direction: column;
+        width: 213px;
+        top: 105%;
+        align-items: start;
+        padding: 12px;
+        gap: 5px;
+        /* visibility: hidden;
+        opacity: 0; */
+        transition: all 0.3s ease-in-out;
+        & li {
+          padding: 0;
+          margin-right: 0;
+          position: relative;
+          display: block;
+          & a {
+            color: #000;
+          }
+          &:hover {
+            & a {
+              color: var(--ecom-theme-color);
+            }
+          }
+
+          & .sub_menu{
+            position: absolute;
+            left: 100%;
+            top: 0;
+            
+          }
+        }
+      }
+      &:hover {
+        & a {
+          color: var(--ecom-theme-sec-color);
+        }
+        & .sub_menu {
+          visibility: visible;
+          opacity: 1;
+          top: 100%;
+        }
+      }
+    }
   }
 }
-
-.ed_main_menu nav ul li a {
-    color: #fff;
-    font-family: var(--ecom-header-font);
-    font-size: 14px;
-}
-.ed_main_menu nav ul {
-   list-style: none;
-   display: flex;
-   align-items: center;
-}
-.ed_main_menu nav ul li {
-  display: block;
-  padding: 36px 0px;
-}
-
