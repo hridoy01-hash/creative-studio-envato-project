@@ -1,1 +1,36 @@
 @use '../../utils' as *;
+
+// @___ header menu___@
+.transparent_header{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.header_logo_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 0px;
+}
+
+.ed_main_menu{
+  nav{
+    li {}
+  }
+}
+
+.ed_main_menu nav ul li a {
+    color: #fff;
+    font-family: var(--ecom-header-font);
+    font-size: 14px;
+}
+.ed_main_menu nav ul {
+   list-style: none;
+   display: flex;
+   align-items: center;
+}
+.ed_main_menu nav ul li {
+  display: block;
+  padding: 36px 0px;
+}
+
