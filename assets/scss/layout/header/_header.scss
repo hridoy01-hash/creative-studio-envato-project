@@ -59,13 +59,14 @@
             & > a {
               color: var(--ecom-theme-color);
             }
-            & .sub_menu{
+            & > .sub_menu{
               visibility: visible;
               opacity: 1;
               top: 0;
             }
           }
         }
+        
       }
       &:hover {
         & a {
@@ -79,4 +80,37 @@
       }
     }
   }
+}
+
+// header_border_bottom
+.header_border_bottom{
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+// header menu bar
+.ed_header_menu_bar{
+  padding: 36px 23px;
+  background-color: #23252D;
+}
+.ed_header_cta {
+  gap: 15px;
+  border-left: 1px solid rgba(255,255,255,0.15);
+  padding: 21px 50px 21px 30px;
+}
+
+.ed_header_search {
+  padding-right: 30px;
+}
+
+.ed_header_cta_text h4{
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-family: var(--ecom-body-font);
+}
+.ed_header_cta_text span{
+  font-size: 18px;
+  color: #B1B4BA;
+  font-weight: 400;
+  font-family: var(--ecom-body-font);
 }
