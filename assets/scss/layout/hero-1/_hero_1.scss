@@ -1,73 +1,40 @@
 @use '../../utils' as *;
+@forward '../../component/btn';
 
 .ed_hero_area {
     padding: 280px 0px 180px 0px;
-    background-color: rgba(10, 14, 26, 1);
     font-family: var(--ecom-heading-font);
     position: relative;
     z-index: 1;
 }
 
-.ed_hero_text_area {
-    position: relative;
-    z-index: 11;
-    .ed_hero_title {
+.ed_hero_black {
+    background-color: rgba(10, 14, 26, 1);
+}
+
+.ed_hero {
+    &_title {
         font-size: 110px;
-        text-transform: uppercase;
-        margin: 0;
-        font-weight: 400;
         color: rgba(255, 255, 255, 1);
-        margin-bottom: 50px;
-    }
-
-    .ed_hero_sub_text {
-        font-style: normal;
+        font-weight: 400;
         text-transform: uppercase;
-        font-weight: 400;
-        font-size: 110px;
-        background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3C7FFF 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
-    .ed_hero_sub_sub_text_content {
-        display: flex;
-        align-items: center;
-        gap: 49px;
-        margin-top: 48px;
-
-        .ed_hero_sub_sub_text_one {
+        & span {
+            background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3C7FFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        & i{
+            color: #B1B4BA;
             font-size: 30px;
-            color: rgba(177, 180, 186, 1);
-            font-weight: 400;
-            text-transform: uppercase;
-            line-height: 40px;
-
-        }
-
-        .ed_hero_sub_sub_text_two {
-            font-size: 110px;
-            text-transform: uppercase;
-            margin: 0;
-            font-weight: 400;
-            color: rgba(255, 255, 255, 1);
+            font-style: normal;
+            display: inline-block;
+            transform: translateY(-7px);
         }
     }
 }
 
-.ed_hero_btn_area {
-    margin-top: 50px;
-    .ed_hero_btn {
-        padding: 21px 46px;
-        background-color: var(--ecom-theme-sec-color);
-        font-size: 18px;
-        color: rgba(10, 14, 26, 1);
-        text-align: center;
-        font-weight: 400;
-        border-radius: 5px;
-    }
-}
 
 .ed_hero_elements {
     &_1 {
@@ -100,6 +67,7 @@
         width: 255px;
         height: 256px;
     }
+
     &_5 {
         position: absolute;
         top: 255px;
@@ -111,7 +79,7 @@
 }
 
 // hero social info
-.ed_hero_info{
+.ed_hero_info {
     color: #B1B4BA;
     font-size: 15px;
     font-weight: 500;
@@ -126,11 +94,13 @@
     top: 100px;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
 }
-.ed_hero_social{
+
+.ed_hero_social {
     transform: rotate(-90deg);
     display: ruby;
 }
-.ed_hero_info_text{
+
+.ed_hero_info_text {
     transform: rotate(-90deg);
     display: ruby;
 }

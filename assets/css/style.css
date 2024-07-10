@@ -141,6 +141,14 @@
   --ecom-body-font:: "DM Sans",ans-serif;
 }
 
+.ed_btn {
+  font-family: var(--ecom-heading-font);
+  padding: 21px 45px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(10, 14, 26);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -3681,66 +3689,34 @@ textarea {
 
 .ed_hero_area {
   padding: 280px 0px 180px 0px;
-  background-color: rgb(10, 14, 26);
   font-family: var(--ecom-heading-font);
   position: relative;
   z-index: 1;
 }
 
-.ed_hero_text_area {
-  position: relative;
-  z-index: 11;
+.ed_hero_black {
+  background-color: rgb(10, 14, 26);
 }
-.ed_hero_text_area .ed_hero_title {
+
+.ed_hero_title {
   font-size: 110px;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 400;
   color: rgb(255, 255, 255);
-  margin-bottom: 50px;
-}
-.ed_hero_text_area .ed_hero_sub_text {
-  font-style: normal;
-  text-transform: uppercase;
   font-weight: 400;
-  font-size: 110px;
+  text-transform: uppercase;
+}
+.ed_hero_title span {
   background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3C7FFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-fill-color: transparent;
 }
-.ed_hero_text_area .ed_hero_sub_sub_text_content {
-  display: flex;
-  align-items: center;
-  gap: 49px;
-  margin-top: 48px;
-}
-.ed_hero_text_area .ed_hero_sub_sub_text_content .ed_hero_sub_sub_text_one {
+.ed_hero_title i {
+  color: #B1B4BA;
   font-size: 30px;
-  color: rgb(177, 180, 186);
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 40px;
-}
-.ed_hero_text_area .ed_hero_sub_sub_text_content .ed_hero_sub_sub_text_two {
-  font-size: 110px;
-  text-transform: uppercase;
-  margin: 0;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-}
-
-.ed_hero_btn_area {
-  margin-top: 50px;
-}
-.ed_hero_btn_area .ed_hero_btn {
-  padding: 21px 46px;
-  background-color: var(--ecom-theme-sec-color);
-  font-size: 18px;
-  color: rgb(10, 14, 26);
-  text-align: center;
-  font-weight: 400;
-  border-radius: 5px;
+  font-style: normal;
+  display: inline-block;
+  transform: translateY(-7px);
 }
 
 .ed_hero_elements_1 {
