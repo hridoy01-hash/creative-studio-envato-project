@@ -1,1 +1,12 @@
 @use '../utils' as *;
+
+.ed_btn {
+   font-family: var(--ecom-heading-font);
+   padding: 21px 47px;
+   font-size: 18px;
+   font-weight: 400;
+   color: rgb(10, 14, 26);
+   display: inline-block;
+   background-color: var(--ecom-theme-sec-color);
+   border-radius: 5px;
+}
