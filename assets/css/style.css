@@ -143,7 +143,6 @@
 
 .ed_btn {
   font-family: var(--ecom-heading-font);
-<<<<<<< HEAD
   padding: 21px 47px;
   font-size: 18px;
   font-weight: 400;
@@ -151,12 +150,6 @@
   display: inline-block;
   background-color: var(--ecom-theme-sec-color);
   border-radius: 5px;
-=======
-  padding: 21px 45px;
-  font-size: 18px;
-  font-weight: 400;
-  color: rgb(10, 14, 26);
->>>>>>> 0efd4d6ddf57b7f39dc93564de7c4288d3ea0086
 }
 
 * {
@@ -3713,10 +3706,7 @@ textarea {
   color: rgb(255, 255, 255);
   font-weight: 400;
   text-transform: uppercase;
-<<<<<<< HEAD
   margin: 0;
-=======
->>>>>>> 0efd4d6ddf57b7f39dc93564de7c4288d3ea0086
 }
 .ed_hero_title span {
   background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3C7FFF 100%);
