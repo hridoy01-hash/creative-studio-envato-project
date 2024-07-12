@@ -1,1 +1,22 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+.ed_about_video {
+    &_info {
+        gap: 20px;
+    }
+    &_icon {
+        & a {
+            display: inline-block;
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            border: 1px solid #57595c;
+            line-height: 75px;
+            border-radius: 50%;
+        }
+    }
+    h4 {
+        color: #57595c;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}
