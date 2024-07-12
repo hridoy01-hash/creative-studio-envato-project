@@ -1,0 +1,48 @@
+@use "../../utils/" as *;
+.ed_news_letter {
+    &_margin {
+        margin-top: -110px;
+        position: relative;
+        z-index: 12;
+    }
+    &_bg {
+        padding: 70px 80px;
+        border-radius: 20px;
+    }
+    &_box {
+        & form {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        & input {
+            border-color: #fff;
+            color: #fff;
+            &:focus {
+                border-color: #ffffff;
+            }
+            @include ed_placeholder {
+                color: #fff;
+            }
+        }
+        &_input {
+            width: calc(100% - 206px);
+            & img {
+                position: absolute;
+                top: 23px;
+                right: 11px;
+            }
+        }
+        &_bgtext {
+            position: absolute;
+            color: #fff;
+            opacity: 0.1;
+            margin: 0;
+            left: 110px;
+            font-size: 100px;
+            line-height: 1;
+            bottom: -30px;
+        }
+    }
+}

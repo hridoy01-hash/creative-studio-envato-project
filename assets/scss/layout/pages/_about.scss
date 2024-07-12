@@ -20,3 +20,24 @@
         line-height: 1.2;
     }
 }
+
+.ed_about_shape {
+    &_1 {
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        max-width: 444px;
+    }
+    &_2 {
+        position: absolute;
+        z-index: 1;
+        max-width: 444px;
+    }
+    &_3 {
+        position: absolute;
+        z-index: 1;
+        left: 35%;
+        bottom: 250px;
+        max-width: 444px;
+    }
+}
