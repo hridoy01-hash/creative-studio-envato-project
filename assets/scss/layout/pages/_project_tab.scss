@@ -1,0 +1,24 @@
+@use "../../utils" as *;
+.ed_project {
+    &_tab {
+        & button {
+            color: #fff;
+            font-size: 100px;
+            line-height: 1.2;
+            font-family: var(--ecom-heading-font);
+            border-bottom: 1px solid #2f446b;
+            padding: 12px 100px;
+            padding-right: 35px;
+            transition: all 0.2s linear;
+            &.active {
+                border-bottom: 1px solid var(--ecom-theme-sec-color);
+                color: var(--ecom-theme-sec-color);
+            }
+        }
+    }
+    &_tab_thumb {
+        & img {
+            border-radius: 20px;
+        }
+    }
+}

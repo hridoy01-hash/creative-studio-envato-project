@@ -151,7 +151,6 @@
   background-color: var(--ecom-theme-color);
   border-radius: 5px;
 }
-
 .ed_btn_sec {
   font-family: var(--ecom-heading-font);
   padding: 21px 47px;
@@ -164,6 +163,17 @@
 }
 .ed_btn_sec_lg {
   padding: 16px 48px;
+}
+.ed_btn_circle {
+  font-family: var(--ecom-heading-font);
+  font-size: 60px;
+  color: #fff;
+  opacity: 0.3;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 48px 75px;
+  display: inline-block;
+  line-height: 1;
+  border-radius: 100%;
 }
 
 .ed_section_title {
@@ -5502,6 +5512,24 @@ textarea {
   font-size: 100px;
   line-height: 1;
   bottom: -30px;
+}
+
+.ed_project_tab button {
+  color: #fff;
+  font-size: 100px;
+  line-height: 1.2;
+  font-family: var(--ecom-heading-font);
+  border-bottom: 1px solid #2f446b;
+  padding: 1px 100px;
+  padding-right: 35px;
+  transition: all 0.2s linear;
+}
+.ed_project_tab button.active {
+  border-bottom: 1px solid var(--ecom-theme-sec-color);
+  color: var(--ecom-theme-sec-color);
+}
+.ed_project_tab_thumb img {
+  border-radius: 20px;
 }
 
 .ed_hero_area {
