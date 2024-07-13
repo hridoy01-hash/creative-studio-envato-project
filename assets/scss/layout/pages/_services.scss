@@ -1,1 +1,45 @@
-@use '../../utils' as *;
+@use "../../utils" as *;
+.edservices {
+    border: 1px solid #57595c;
+    padding: 50px 40px;
+    &_icon {
+    }
+    &_title {
+        font-size: 30px;
+    }
+    &_text {
+        p {
+        }
+    }
+    &_lists {
+        & ul {
+            list-style: none;
+            & li {
+                margin-bottom: 5px;
+                color: #57595c;
+                &::before {
+                    background-color: #57595c;
+                    content: "";
+                    height: 8px;
+                    width: 8px;
+                    display: inline-block;
+                    border-radius: 30px;
+                    margin-right: 9px;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+    &_btn {
+        & a {
+            background: #fbf6ef;
+            width: 100%;
+            display: inline-block;
+            padding: 6px 28px;
+            border-radius: 5px;
+            font-size: 18px;
+            color: #0A0E1A;
+            font-family: var(--ecom-heading-font);
+        }
+    }
+}
