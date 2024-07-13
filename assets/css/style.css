@@ -458,6 +458,20 @@ textarea {
   background-color: var(--ecom-nblue-color);
 }
 
+.ed_yellow_bg {
+  background-color: var(--ecom-theme-sec-color);
+}
+
+.ed_slide_transtion {
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+}
+
+.ed_brand_slide_element {
+  width: auto !important;
+  display: inline-block !important;
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/

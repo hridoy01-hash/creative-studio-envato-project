@@ -17,4 +17,19 @@
         },
     });
 
+    // ed brand scrool animation
+    var swiper = new Swiper(".ed_brand_scroll_active", {
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        loop: true,
+        freemood:true,
+        speed:200,
+        centeredSlides:true,
+        allowTouchMove:true,
+        autoplay:{
+            delay:1,
+            disableOnInteraction:true,
+        }
+    });
+
 })(jQuery);
