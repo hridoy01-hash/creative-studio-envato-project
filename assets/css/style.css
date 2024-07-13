@@ -128,13 +128,12 @@
   --ecom-theme-color: #0057FC;
   --ecom-theme-sec-color: #FFE815;
   --ecom-body-color: #57595C;
+  --ecom-heading-color: #0A0E1A;
   --ecom-nblue-color: #001C52;
   --ecom-white: white;
   --ecom-black: rgb(0, 0, 0);
   --ecom-grey-color: #f6f6f6;
-  --ecom-grey-color-2: #f6f6f6;
-  --ecom-grey-color-3: #f6f6f6;
-  --ecom-grey-color-4: #f6f6f6;
+  --ecom-service-hov-color: #FBF6EF;
 }
 
 :root {
@@ -205,7 +204,7 @@ h4,
 h5,
 h6 {
   font-family: var(--ecom-heading-font);
-  color: var(--tp-theme-sec-color);
+  color: var(--ecom-heading-color);
   margin-top: 0px;
   font-weight: 700;
   line-height: 1.2;
@@ -5400,6 +5399,8 @@ textarea {
 .edservices {
   border: 1px solid #57595c;
   padding: 50px 40px;
+  margin-right: -1px;
+  transition: all 0.3s linear;
 }
 .edservices_title {
   font-size: 30px;
@@ -5421,8 +5422,8 @@ textarea {
   margin-right: 9px;
   transform: translateY(-2px);
 }
-.edservices_btn a {
-  background: #fbf6ef;
+.edservices_btn .ed_sv_btn {
+  background: var(--ecom-service-hov-color);
   width: 100%;
   display: inline-block;
   padding: 6px 28px;
@@ -5430,6 +5431,20 @@ textarea {
   font-size: 18px;
   color: #0A0E1A;
   font-family: var(--ecom-heading-font);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s linear;
+}
+.edservices_btn .ed_sv_btn i {
+  transform: rotate(-45deg);
+}
+.edservices:hover {
+  background-color: var(--ecom-service-hov-color);
+}
+.edservices:hover .ed_sv_btn {
+  background-color: var(--ecom-theme-color);
+  color: #fff;
 }
 
 .ed_news_letter_margin {

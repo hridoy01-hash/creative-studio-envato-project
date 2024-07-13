@@ -156,7 +156,7 @@ h4,
 h5,
 h6 {
 	font-family: var(--ecom-heading-font);
-	color: var(--tp-theme-sec-color);
+	color: var(--ecom-heading-color);
 	margin-top: 0px;
 	font-weight: 700;
 	line-height: 1.2;
@@ -266,7 +266,7 @@ textarea {
 	width: 100%;
 	line-height: 56px;
 	font-size: 14px;
-	color: var( --ecom-white);
+	color: var(--ecom-white);
 	border: 0;
 	border-bottom: 1px solid #57595c;
 	text-transform: uppercase;
