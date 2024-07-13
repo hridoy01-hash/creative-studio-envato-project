@@ -444,6 +444,10 @@ textarea {
   border-radius: 20px;
 }
 
+.ed_nblue_bg {
+  background-color: var(--ecom-nblue-color);
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
