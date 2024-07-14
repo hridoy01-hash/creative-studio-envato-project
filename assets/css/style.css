@@ -458,6 +458,10 @@ textarea {
   background-color: var(--ecom-nblue-color);
 }
 
+.ed_theme_bg {
+  background-color: rgb(0, 87, 252);
+}
+
 .ed_yellow_bg {
   background-color: var(--ecom-theme-sec-color);
 }
