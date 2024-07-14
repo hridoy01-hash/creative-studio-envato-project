@@ -1,1 +1,1 @@
-sass --watch "E:\web design for Envato\assets\scss\main.scss" "E:\web design for Envato\assets\css\style.css"
+sass --watch E:\creative-studio-envato-project\assets\scss\main.scss E:\creative-studio-envato-project\assets\css\style.css
