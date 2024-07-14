@@ -134,6 +134,7 @@
   --ecom-black: rgb(0, 0, 0);
   --ecom-grey-color: #f6f6f6;
   --ecom-service-hov-color: #FBF6EF;
+  --ed-theme-cream-color: #FBF6EF;
 }
 
 :root {
@@ -474,6 +475,10 @@ textarea {
 .ed_brand_slide_element {
   width: auto !important;
   display: inline-block !important;
+}
+
+.ed_theme_cream_bg {
+  background-color: var(--ed-theme-cream-color);
 }
 
 /*--
@@ -5645,6 +5650,41 @@ textarea {
 }
 .ed_project_tab_thumb img {
   border-radius: 20px;
+}
+
+.ed_award_wrapper .row .col-md-6:nth-child(even) .ed_award {
+  padding-left: 50px;
+  border-left: 1px solid #57595c;
+}
+.ed_award_wrapper .row .col-md-6:nth-child(1) .ed_award {
+  padding-top: 0;
+}
+.ed_award_wrapper .row .col-md-6:nth-child(2) .ed_award {
+  padding-top: 0;
+}
+.ed_award_wrapper .row .col-md-6:nth-last-child(-n+2) .ed_award {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.ed_award {
+  border-bottom: 1px solid #57595c;
+  padding: 35px 0px;
+}
+.ed_award_wrapper {
+  padding-right: 85px;
+}
+.ed_award span {
+  font-family: var(--ecom-heading-font);
+  font-size: 20px;
+  color: #57595c;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.ed_award_title {
+  font-weight: 400;
+  font-size: 30px;
+  margin: 0;
 }
 
 .ed_hero_area {
