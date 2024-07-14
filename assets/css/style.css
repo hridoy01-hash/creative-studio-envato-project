@@ -5479,6 +5479,49 @@ textarea {
   color: #fff;
 }
 
+.ed_team_thumb img {
+  border-radius: 15px;
+}
+.ed_team_info span {
+  font-size: 17px;
+  color: #57595C;
+  line-height: 28px;
+}
+.ed_team_info span i {
+  display: inline-block;
+  height: 1px;
+  width: 60px;
+  background-color: #D6D6D1;
+  margin-right: 10px;
+  transform: translateY(-4px);
+}
+.ed_team_social a {
+  color: #0A0E1A;
+  font-size: 25px;
+  margin-right: 12px;
+  transition: all 0.2s linear;
+}
+.ed_team_social a:hover {
+  color: var(--ecom-theme-color);
+}
+.ed_team_title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ed_team_slide_btn {
+  display: inline-block;
+}
+
+.ed_team_slide_btn_wrapper span {
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  background-color: #DBDBDB;
+  border-radius: 100%;
+  margin: 0 10px;
+}
+
 .ed_testimonial_desc {
   font-size: 100px;
   font-weight: 400;

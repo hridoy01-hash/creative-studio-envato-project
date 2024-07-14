@@ -1,1 +1,59 @@
-@use '../../utils' as *;
+@use '../../utils'as *;
+
+.ed_team {
+    &_thumb {
+        & img {
+            border-radius: 15px;
+        }
+    }
+
+    &_info {
+        & span {
+            font-size: 17px;
+            color: #57595C;
+            line-height: 28px;
+
+            & i {
+                display: inline-block;
+                height: 1px;
+                width: 60px;
+                background-color: #D6D6D1;
+                margin-right: 10px;
+                transform: translateY(-4px);
+            }
+        }
+    }
+
+    &_social {
+        & a {
+            color: #0A0E1A;
+            font-size: 25px;
+            margin-right: 12px;
+            transition: all 0.2s linear;
+
+            &:hover {
+                color: var(--ecom-theme-color);
+            }
+        }
+    }
+
+    &_title {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+.ed_team_slide_btn {
+    display: inline-block;
+}
+
+.ed_team_slide_btn_wrapper {
+    & span {
+        height: 12px;
+        width: 12px;
+        display: inline-block;
+        background-color: #DBDBDB;
+        border-radius: 100%;
+        margin: 0 10px;
+    }
+}
