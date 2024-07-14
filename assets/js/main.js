@@ -4,6 +4,7 @@
     var swiper = new Swiper(".ed_testimonial_slide_active", {
         slidesPerView: 1,
         spaceBetween: 30,
+        speed: 1500,
         keyboard: {
             enabled: true,
         },
@@ -23,7 +24,7 @@
         spaceBetween: 80,
         freeMode: true,
         loop: "infinite",
-        speed: 2000, // Adjust this for desired scrolling speed
+        speed: 2000,
         allowTouchMove: false,
         autoplay: {
             delay: 0,
@@ -36,12 +37,12 @@
         spaceBetween: 80,
         freeMode: true,
         loop: "infinite",
-        speed: 2000, // Adjust this for desired scrolling speed
+        speed: 2000,
         allowTouchMove: false,
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
-        },
+        }
     });
 
     // ed_testimonial slider
