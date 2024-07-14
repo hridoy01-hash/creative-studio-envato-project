@@ -1,10 +1,11 @@
-@use "../utils" as *;
+@use "../utils"as *;
 
 .w-img {
 	& img {
 		width: 100%;
 	}
 }
+
 .m-img {
 	& img {
 		max-width: 100%;
@@ -14,6 +15,7 @@
 .fix {
 	overflow: hidden;
 }
+
 .clear {
 	clear: both;
 }
@@ -30,6 +32,7 @@
 	overflow-x: hidden;
 	overflow-y: visible;
 }
+
 .overflow-x-visible {
 	overflow-x: visible;
 	overflow-y: hidden;
@@ -38,6 +41,7 @@
 .p-relative {
 	position: relative;
 }
+
 .p-absolute {
 	position: absolute;
 }
@@ -45,22 +49,26 @@
 .ed_blue_bg {
 	background-color: var(--ecom-theme-color);
 }
+
 .br_20 {
 	border-radius: 20px;
 }
+
 .ed_nblue_bg {
 	background-color: var(--ecom-nblue-color);
 }
-.ed_yellow_bg{
-	background-color: var( --ecom-theme-sec-color);
+
+.ed_yellow_bg {
+	background-color: var(--ecom-theme-sec-color);
 }
 
 // @__________brand scrolling animation _________@
-.ed_slide_transtion{
-	-webkit-transition-timing-function : linear;
-	transition-timing-function:linear;
+.ed_slide_transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
 }
-.ed_brand_slide_element{
+
+.ed_brand_slide_element {
 	width: auto !important;
 	display: inline-block !important;
 }

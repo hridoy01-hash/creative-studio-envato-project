@@ -20,16 +20,15 @@
     // ed brand scrool animation
     var swiper = new Swiper(".ed_brand_scroll_active", {
         slidesPerView: 'auto',
-        spaceBetween: 30,
+        spaceBetween: 80,
+        freeMode: true,
         loop: true,
-        freemood:true,
-        speed:200,
-        centeredSlides:true,
-        allowTouchMove:true,
-        autoplay:{
-            delay:1,
-            disableOnInteraction:true,
-        }
+        speed: 2000, // Adjust this for desired scrolling speed
+        allowTouchMove: false,
+        autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+        },
     });
 
 })(jQuery);
