@@ -265,7 +265,7 @@ textarea {
 	height: 56px;
 	width: 100%;
 	line-height: 56px;
-	font-size: 14px;
+	font-size: 15px;
 	color: var(--ecom-white);
 	border: 0;
 	border-bottom: 1px solid #57595c;
@@ -276,7 +276,7 @@ textarea {
 		color: #57595c;
 	}
 	&:focus {
-		border-color: #ffffff;
+		// border-color: #ffffff;
 		&::placeholder {
 			opacity: 0;
 		}

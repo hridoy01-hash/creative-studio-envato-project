@@ -1,1 +1,15 @@
 @use '../../utils' as *;
+.fs_100{
+    font-size: 100px;
+    color: #0A0E1A;
+    font-weight: 400;
+}
+.ed_form_title{
+    font-size: 30px;
+}
+.ed_contact_form_box{
+    & input, & textarea{
+        border-color: #57595c;
+        color: #0A0E1A;
+    }
+}
