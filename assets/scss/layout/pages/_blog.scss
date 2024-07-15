@@ -1,0 +1,34 @@
+@use '../../utils'as *;
+
+.ed_blog {
+    &_title {
+        font-family: var(--ecom-heading-font);
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.2;
+        color: #0a0e1a;
+    }
+
+    &_meta {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        & span {
+            font-size: 17px;
+            color: #57595c;
+
+            & i {
+                margin-right: 5px;
+            }
+        }
+
+        & cite {
+            display: inline-block;
+            height: 16px;
+            width: 2px;
+            background-color: #57595C;
+            margin: 0 15px;
+        }
+    }
+}
