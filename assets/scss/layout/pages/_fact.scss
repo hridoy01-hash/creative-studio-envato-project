@@ -1,1 +1,32 @@
-@use '../../utils' as *;
+@use '../../utils'as *;
+
+.custom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ed_fact {
+    &_icon {}
+
+    &_title {
+        font-family: var(--ecom-heading-font);
+        font-weight: 400;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 0;
+        margin-top: 28px;
+    }
+
+    &_text {
+        & span {
+            font-family: var(--ecom-heading-font);
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 1;
+            color: #fff;
+            display: inline-block;
+            margin-top: 28px;
+        }
+    }
+}
