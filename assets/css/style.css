@@ -473,6 +473,10 @@ textarea {
   background-color: var(--ecom-theme-sec-color);
 }
 
+.ed_theme_black_bg {
+  background-color: var(--ecom-heading-color);
+}
+
 .ed_slide_transtion {
   -webkit-transition-timing-function: linear;
   transition-timing-function: linear;
@@ -5296,6 +5300,129 @@ textarea {
 
 .pr-150 {
   padding-right: 150px;
+}
+
+.ed_footer_separetor {
+  background-color: #fff;
+  opacity: 0.15;
+  height: 1px;
+}
+.ed_footer_social a {
+  color: #fff;
+  opacity: 0.7;
+  margin-right: 15px;
+}
+.ed_footer_widget_title {
+  font-size: 20px;
+  color: #FFFFFF;
+}
+.ed_footer_widget ul {
+  list-style: none;
+}
+.ed_footer_widget ul li a {
+  font-size: 17px;
+  color: #B1B4BA;
+}
+.ed_footer_widget ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.ed_footer_content span {
+  font-size: 17px;
+  color: #B1B4BA;
+}
+
+.ed_footer_contact_item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.ed_footer_contact_item span {
+  font-size: 17px;
+  color: #B1B4BA;
+}
+.ed_footer_contact_item h4 {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.ed_footer_col_3 {
+  padding-left: 55px;
+  position: relative;
+}
+.ed_footer_col_4 {
+  padding-left: 55px;
+}
+.ed_footer_col_4::before {
+  left: -65px;
+}
+.ed_footer_col_3 {
+  position: relative;
+}
+.ed_footer_col_3::before, .ed_footer_col_3::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.15;
+  left: -40px;
+  top: 0px;
+}
+.ed_footer_col_3:after {
+  left: auto;
+  right: 30px;
+}
+
+.ed_footer_copyright p {
+  font-size: 17px;
+  color: #B1B4BA;
+  margin: 0;
+}
+.ed_footer_copyright p a {
+  color: var(--ecom-theme-sec-color);
+  font-weight: 500;
+}
+
+.ed_footer_navigation ul li {
+  display: inline-block;
+  padding-left: 33px;
+  margin-left: 33px;
+  position: relative;
+}
+.ed_footer_navigation ul li:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  height: 13px;
+  width: 1px;
+  background-color: #b1b4ba;
+  left: 0;
+  top: 8px;
+}
+.ed_footer_navigation ul li a {
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #b1b4ba;
+}
+
+.ed_footer_copyright_area {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.ed_footer_shape_1 {
+  right: 216px;
+  bottom: 45px;
+}
+.ed_footer_shape_2 {
+  top: 110px;
+  left: 46%;
+}
+.ed_footer_shape_3 {
+  top: 302px;
+  left: 328px;
+}
+.ed_footer_shape_4 {
+  top: 62px;
+  right: 101px;
 }
 
 .transparent_header {
