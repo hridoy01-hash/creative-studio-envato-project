@@ -5506,7 +5506,10 @@ textarea {
 
 .ed_header_menu_bar {
   padding: 36px 23px;
-  background-color: #23252D;
+  background-color: #23252d;
+}
+.ed_header_menu_bar i {
+  color: #fff;
 }
 .ed_header_cta {
   gap: 15px;
@@ -5518,13 +5521,13 @@ textarea {
 }
 .ed_header_cta_text h4 {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 400;
   font-family: var(--ecom-body-font);
 }
 .ed_header_cta_text span {
   font-size: 18px;
-  color: #B1B4BA;
+  color: #b1b4ba;
   font-weight: 400;
   font-family: var(--ecom-body-font);
 }
