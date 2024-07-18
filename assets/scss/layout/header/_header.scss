@@ -1,4 +1,5 @@
-@use "../../utils" as *;
+@use "../../utils"as *;
+
 // @___ header menu___@
 .transparent_header {
   position: absolute;
@@ -13,19 +14,34 @@
     list-style: none;
     display: flex;
     align-items: center;
+
     & li {
       display: inline-block;
       margin-right: 42px;
       padding: 36px 0px;
       position: relative;
       cursor: pointer;
+
       & a {
         color: #fff;
-        font-size: 14px;
+        font-size: 15px;
         font-family: var(--ecom-heading-font);
         display: inline-block;
         transition: color 0.3s ease-in-out;
+
+        &:before {
+          content: '\f121';
+          font-family: var(--ecom-flaticon-font);
+          color: var(--ecom-theme-sec-color);
+          position: absolute;
+          font-size: 40px;
+          top: -5px;
+          left: 15px;
+          opacity: 0;
+          transition: all 0.2s;
+        }
       }
+
       & .sub_menu {
         position: absolute;
         background-color: white;
@@ -38,15 +54,22 @@
         visibility: hidden;
         opacity: 0;
         transition: all 0.3s ease-in-out;
+
         & li {
           padding: 0;
           margin-right: 0;
           position: relative;
           display: block;
           width: 100%;
+
           & a {
             color: #000;
+
+            &:before {
+              display: none;
+            }
           }
+
           & .sub_menu {
             position: absolute;
             left: 100%;
@@ -55,11 +78,13 @@
             opacity: 0;
             transition: all 0.3s ease-in-out;
           }
+
           &:hover {
-            & > a {
+            &>a {
               color: var(--ecom-theme-color);
             }
-            & > .sub_menu {
+
+            &>.sub_menu {
               visibility: visible;
               opacity: 1;
               top: 0;
@@ -67,10 +92,17 @@
           }
         }
       }
+
       &:hover {
         & a {
           color: var(--ecom-theme-sec-color);
+
+          &:before {
+            opacity: 1;
+            top: 0;
+          }
         }
+
         & .sub_menu {
           visibility: visible;
           opacity: 1;
@@ -89,26 +121,52 @@
 // header menu bar
 .ed_header {
   &_menu_bar {
-    padding: 36px 23px;
+    padding: 20px 20px;
     background-color: #23252d;
-    & i{
+    display: flex;
+
+    & i {
       color: #fff;
+      font-size: 61px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
+
   &_cta {
     gap: 15px;
     border-left: 1px solid rgba(255, 255, 255, 0.15);
     padding: 21px 50px 21px 30px;
+
+    & i {
+      color: var(--ecom-theme-sec-color);
+      font-size: 35px;
+      display: flex;
+      align-items: center;
+    }
   }
+
   &_search {
     padding-right: 30px;
+
+    & button {
+      & i {
+        font-size: 28px;
+        color: #b1b4ba;
+        display: flex;
+        align-items: center;
+      }
+    }
   }
+
   &_cta_text h4 {
     font-size: 18px;
     color: #ffffff;
     font-weight: 400;
     font-family: var(--ecom-body-font);
   }
+
   &_cta_text span {
     font-size: 18px;
     color: #b1b4ba;
