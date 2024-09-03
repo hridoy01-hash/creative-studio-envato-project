@@ -7,6 +7,16 @@
     &_title {
         font-size: 30px;
     }
+    &_icon {
+        & span {
+            i {
+                font-size: 80px;
+                color: var(--ed-common-black);
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
     &_text {
         p {
         }
@@ -32,25 +42,25 @@
     }
     &_btn {
         & .ed_sv_btn {
-            background: var( --ecom-service-hov-color);
+            background: var(--ecom-service-hov-color);
             width: 100%;
             display: inline-block;
             padding: 6px 28px;
             border-radius: 5px;
             font-size: 18px;
-            color: #0A0E1A;
+            color: #0a0e1a;
             font-family: var(--ecom-heading-font);
             display: flex;
             align-items: center;
             justify-content: space-between;
             transition: all 0.3s linear;
-            & i{
+            & i {
                 transform: rotate(-45deg);
             }
         }
     }
-    &:hover{
-        background-color: var( --ecom-service-hov-color);
+    &:hover {
+        background-color: var(--ecom-service-hov-color);
         & .ed_sv_btn {
             background-color: var(--ecom-theme-color);
             color: #fff;

@@ -48,12 +48,26 @@
     }
 }
 
+.ed_rotated_180 {
+    transform: rotate(-180deg);
+}
+
 .ed_testimonial_btn {
     position: absolute;
     left: -100px;
     top: 35%;
+    &_next {
+        & i {
+            font-size: 45px;
+            display: inline-flex;
+        }
+    }
     &_prev {
         left: auto;
         right: -100px;
+        & i {
+            font-size: 45px;
+            display: inline-flex;
+        }
     }
 }

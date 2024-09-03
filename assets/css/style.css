@@ -135,6 +135,7 @@
   --ecom-grey-color: #f6f6f6;
   --ecom-service-hov-color: #FBF6EF;
   --ed-theme-cream-color: #FBF6EF;
+  --ed-common-black:#0A0E1A;
 }
 
 :root {
@@ -5653,6 +5654,12 @@ textarea {
 .edservices_title {
   font-size: 30px;
 }
+.edservices_icon span i {
+  font-size: 80px;
+  color: var(--ed-common-black);
+  display: flex;
+  align-items: center;
+}
 .edservices_lists ul {
   list-style: none;
 }
@@ -5677,7 +5684,7 @@ textarea {
   padding: 6px 28px;
   border-radius: 5px;
   font-size: 18px;
-  color: #0A0E1A;
+  color: #0a0e1a;
   font-family: var(--ecom-heading-font);
   display: flex;
   align-items: center;
@@ -5787,9 +5794,17 @@ textarea {
   left: -100px;
   top: 35%;
 }
+.ed_testimonial_btn_next i {
+  font-size: 45px;
+  display: inline-flex;
+}
 .ed_testimonial_btn_prev {
   left: auto;
   right: -100px;
+}
+.ed_testimonial_btn_prev i {
+  font-size: 45px;
+  display: inline-flex;
 }
 
 .ed_news_letter_margin {
