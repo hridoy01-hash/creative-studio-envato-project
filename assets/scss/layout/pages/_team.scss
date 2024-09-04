@@ -1,4 +1,4 @@
-@use '../../utils'as *;
+@use "../../utils" as *;
 
 .ed_team {
     &_thumb {
@@ -10,14 +10,14 @@
     &_info {
         & span {
             font-size: 17px;
-            color: #57595C;
+            color: #57595c;
             line-height: 28px;
 
             & i {
                 display: inline-block;
                 height: 1px;
                 width: 60px;
-                background-color: #D6D6D1;
+                background-color: #d6d6d1;
                 margin-right: 10px;
                 transform: translateY(-4px);
             }
@@ -26,7 +26,7 @@
 
     &_social {
         & a {
-            color: #0A0E1A;
+            color: #0a0e1a;
             font-size: 25px;
             margin-right: 12px;
             transition: all 0.2s linear;
@@ -48,12 +48,24 @@
 }
 
 .ed_team_slide_btn_wrapper {
+    display: flex;
+    justify-content: end;
+    align-content: center;
     & span {
         height: 12px;
         width: 12px;
         display: inline-block;
-        background-color: #DBDBDB;
+        background-color: #dbdbdb;
         border-radius: 100%;
         margin: 0 10px;
+        margin-top: 16px;
+        
+    }
+    & .ed_team_btn_prev,
+    .ed_team_btn_next {
+        & i {
+            font-size: 45px;
+            display: inline-flex;
+        }
     }
 }

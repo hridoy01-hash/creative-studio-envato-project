@@ -1,4 +1,4 @@
-@use '../../utils'as *;
+@use "../../utils" as *;
 
 .custom-row {
     display: flex;
@@ -7,7 +7,13 @@
 }
 
 .ed_fact {
-    &_icon {}
+    &_icon {
+        & i {
+            font-size: 100px;
+            color: var(--ecom-theme-sec-color);
+            display: inline-flex;
+        }
+    }
 
     &_title {
         font-family: var(--ecom-heading-font);
@@ -15,7 +21,6 @@
         font-size: 30px;
         color: rgba(255, 255, 255, 0.5);
         margin: 0;
-        margin-top: 28px;
     }
 
     &_text {
