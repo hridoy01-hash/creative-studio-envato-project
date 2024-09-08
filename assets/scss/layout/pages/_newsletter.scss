@@ -8,6 +8,9 @@
     &_bg {
         padding: 70px 80px;
         border-radius: 20px;
+        @media #{$xl}{
+            padding: 50px 70px;
+        }
     }
     &_box {
         & form {

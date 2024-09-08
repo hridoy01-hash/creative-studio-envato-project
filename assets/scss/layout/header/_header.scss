@@ -8,8 +8,14 @@
   width: 100%;
   z-index: 5;
 }
+.ed_header_area {
+  padding-left: 30px;
+}
 
-.ed_main_menu nav {
+.ed_main_menu {
+  @media #{$xl}{
+    padding-left: 10px;
+  }
   & ul {
     list-style: none;
     display: flex;
@@ -21,7 +27,12 @@
       padding: 36px 0px;
       position: relative;
       cursor: pointer;
-
+      @media #{$xxlm}{
+        margin-right: 27px;
+      }
+      @media #{$xl}{
+        margin-right: 20px;
+      }
       & a {
         color: #fff;
         font-size: 15px;
@@ -138,7 +149,9 @@
     gap: 15px;
     border-left: 1px solid rgba(255, 255, 255, 0.15);
     padding: 21px 50px 21px 30px;
-
+    @media #{$xl}{
+      padding: 21px 40px 21px 25px;
+    }
     & i {
       color: var(--ecom-theme-sec-color);
       font-size: 35px;
@@ -149,7 +162,9 @@
 
   &_search {
     padding-right: 30px;
-
+    @media #{$xl}{
+      padding-right: 25px;
+    }
     & button {
       & i {
         font-size: 28px;

@@ -6,6 +6,9 @@
     transition: all 0.3s linear;
     &_title {
         font-size: 30px;
+        @media #{$xl}{
+            font-size: 25px;
+        }
     }
     &_icon {
         & span {

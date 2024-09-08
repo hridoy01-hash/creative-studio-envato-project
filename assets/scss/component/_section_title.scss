@@ -8,4 +8,7 @@
     &_white{
         color: #fff;
     }
+    @media #{$xl}{
+        font-size: 52px;
+    }
 }

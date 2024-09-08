@@ -10,6 +10,9 @@
             padding: 12px 100px;
             padding-right: 35px;
             transition: all 0.2s linear;
+            @media #{$xxlm} {
+                font-size: 70px;
+            }
             &.active {
                 border-bottom: 1px solid var(--ecom-theme-sec-color);
                 color: var(--ecom-theme-sec-color);
@@ -19,6 +22,7 @@
     &_tab_thumb {
         & img {
             border-radius: 20px;
+            max-width: 100%;
         }
     }
 }

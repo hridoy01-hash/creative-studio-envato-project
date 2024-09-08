@@ -49,13 +49,19 @@
 }
 
 .flaticon-right-arrow.ed_rotated_180 {
-	transform: rotate(-180deg);
+    transform: rotate(-180deg);
 }
 
 .ed_testimonial_btn {
     position: absolute;
     left: -100px;
     top: 35%;
+    @media #{$xxlm} {
+        left: 0;
+        top: inherit;
+        bottom: 25px;
+        z-index: 10;
+    }
     &_next {
         & i {
             font-size: 45px;
@@ -65,6 +71,12 @@
     &_prev {
         left: auto;
         right: -100px;
+        @media #{$xxl} {
+            right: 0;
+            left: inherit;
+            bottom: 25px;
+            z-index: 10;
+        }
         & i {
             font-size: 45px;
             display: inline-flex;
