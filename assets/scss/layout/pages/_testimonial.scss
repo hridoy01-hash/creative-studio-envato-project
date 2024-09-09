@@ -1,10 +1,13 @@
-@use "../../utils"as *;
+@use "../../utils" as *;
 
 .ed_testimonial {
     &_desc {
         font-size: 100px;
         font-weight: 400;
         line-height: 1.1;
+        @media #{$xl} {
+            font-size: 80px;
+        }
     }
 
     &_name {
@@ -34,6 +37,10 @@
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
+            @media #{$xl} {
+                top: 0;
+                
+            }
         }
 
         &_2 {
@@ -42,6 +49,9 @@
             top: 121px;
             left: 127px;
             transform: translateX(-50%);
+            @media #{$xl} {
+                top: 79px;
+            }
         }
 
         &_3 {
@@ -50,6 +60,9 @@
             top: 39px;
             right: -120px;
             transform: translateX(-50%);
+            @media #{$xl} {
+                top: 0;
+            }
         }
     }
 }
