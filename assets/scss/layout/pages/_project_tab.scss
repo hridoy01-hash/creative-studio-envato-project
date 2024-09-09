@@ -13,6 +13,9 @@
             @media #{$xxlm} {
                 font-size: 70px;
             }
+            @media #{$xl} {
+                font-size: 55px;
+            }
             &.active {
                 border-bottom: 1px solid var(--ecom-theme-sec-color);
                 color: var(--ecom-theme-sec-color);

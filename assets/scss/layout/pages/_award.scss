@@ -39,10 +39,16 @@
         color: #57595c;
         display: inline-block;
         margin-bottom: 10px;
+        @media #{$xl}{
+            font-size: 15px;
+        }
     }
     &_title {
-        font-weight: 400;
+        font-weight: 700;
         font-size: 30px;
         margin: 0;
+        @media #{$xl}{
+            font-size: 24px;
+        }
     }
 }

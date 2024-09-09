@@ -3,6 +3,9 @@
     font-size: 100px;
     color: #0A0E1A;
     font-weight: 400;
+    @media #{$xl}{
+        font-size: 80px;
+    }
 }
 .ed_form_title{
     font-size: 30px;

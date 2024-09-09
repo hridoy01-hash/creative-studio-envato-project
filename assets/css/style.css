@@ -170,13 +170,19 @@
 .ed_btn_circle {
   font-family: var(--ecom-heading-font);
   font-size: 60px;
-  color: #fff;
+  color: #fff !important;
   opacity: 0.3;
   border: 2px solid rgba(255, 255, 255, 0.2);
   padding: 48px 75px;
   display: inline-block;
   line-height: 1;
   border-radius: 100%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_btn_circle {
+    font-size: 45px;
+    padding: 40px 60px;
+  }
 }
 
 .ed_text_btn {
@@ -5359,8 +5365,18 @@ img {
   padding-left: 55px;
   position: relative;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_footer_col_3 {
+    padding-left: 20px;
+  }
+}
 .ed_footer_col_4 {
   padding-left: 55px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_footer_col_4 {
+    padding-left: 20px;
+  }
 }
 .ed_footer_col_4::before {
   left: -65px;
@@ -5654,6 +5670,11 @@ img {
   color: #0A0E1A;
   font-weight: 400;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .fs_100 {
+    font-size: 80px;
+  }
+}
 
 .ed_form_title {
   font-size: 30px;
@@ -5874,6 +5895,15 @@ img {
     z-index: 10;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_testimonial_btn {
+    left: 50%;
+    top: inherit;
+    bottom: -11%;
+    z-index: 10;
+    transform: translateX(-50%);
+  }
+}
 .ed_testimonial_btn_next i {
   font-size: 45px;
   display: inline-flex;
@@ -5882,12 +5912,21 @@ img {
   left: auto;
   right: -100px;
 }
-@media only screen and (min-width: 1400px) and (max-width: 4000px) {
+@media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .ed_testimonial_btn_prev {
     right: 0;
     left: inherit;
     bottom: 25px;
     z-index: 10;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_testimonial_btn_prev {
+    right: 39%;
+    left: inherit;
+    bottom: -10%;
+    z-index: 10;
+    transform: translate(-50%, 10px);
   }
 }
 .ed_testimonial_btn_prev i {
@@ -5968,6 +6007,11 @@ img {
     font-size: 70px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_project_tab button {
+    font-size: 55px;
+  }
+}
 .ed_project_tab button.active {
   border-bottom: 1px solid var(--ecom-theme-sec-color);
   color: var(--ecom-theme-sec-color);
@@ -6006,10 +6050,20 @@ img {
   display: inline-block;
   margin-bottom: 10px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_award span {
+    font-size: 15px;
+  }
+}
 .ed_award_title {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 30px;
   margin: 0;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .ed_award_title {
+    font-size: 24px;
+  }
 }
 
 .ed_blog_title {

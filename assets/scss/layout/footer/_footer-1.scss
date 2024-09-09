@@ -67,10 +67,20 @@
     &_3 {
         padding-left: 55px;
         position: relative;
+
+        @media #{$xl} {
+            padding-left: 20px;
+
+        }
     }
 
     &_4 {
         padding-left: 55px;
+
+        @media #{$xl} {
+            padding-left: 20px;
+
+        }
 
         &::before {
             left: -65px;
@@ -160,6 +170,7 @@
     &_3 {
         top: 302px;
         left: 328px;
+
     }
 
     &_4 {

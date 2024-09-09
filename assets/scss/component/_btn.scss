@@ -28,13 +28,18 @@
    &_circle {
       font-family: var(--ecom-heading-font);
       font-size: 60px;
-      color: #fff;
+      color: #fff !important;
       opacity: 0.3;
       border: 2px solid rgba(255, 255, 255, 0.2);
       padding: 48px 75px;
       display: inline-block;
       line-height: 1;
       border-radius: 100%;
+
+      @media #{$xl} {
+         font-size: 45px;
+         padding: 40px 60px;
+      }
    }
 }
 
