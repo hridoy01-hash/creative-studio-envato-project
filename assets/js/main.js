@@ -60,6 +60,17 @@
             nextEl: ".ed_team_btn_next",
             prevEl: ".ed_team_btn_prev",
         },
+        breakpoints:{
+            640:{
+                slidesPerView:2
+            },
+            992:{
+                slidesPerView:3
+            },
+            1200:{
+                slidesPerView:4
+            }
+        }
     });
 
     // data background image

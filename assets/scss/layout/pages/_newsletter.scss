@@ -13,6 +13,9 @@
         }
     }
     &_box {
+        @media #{$lg}{
+            margin-top: 10px;
+        }
         & form {
             display: flex;
             align-items: center;

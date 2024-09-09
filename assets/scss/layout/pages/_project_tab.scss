@@ -1,4 +1,10 @@
 @use "../../utils" as *;
+@media #{$lg}{
+    .ed_project_tab_area {
+        padding-right: 0;
+        
+    }
+}
 .ed_project {
     &_tab {
         & button {
@@ -18,6 +24,10 @@
                 padding: 12px 50px;
                 
             }
+            @media #{$lg} {
+                font-size: 40px;
+                padding: 12px 20px;  
+            }
             &.active {
                 border-bottom: 1px solid var(--ecom-theme-sec-color);
                 color: var(--ecom-theme-sec-color);
@@ -25,6 +35,14 @@
         }
     }
     &_tab_thumb {
+        @media #{$lg} {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            margin-top: 25px; 
+
+
+        }
         & img {
             border-radius: 20px;
             max-width: 100%;

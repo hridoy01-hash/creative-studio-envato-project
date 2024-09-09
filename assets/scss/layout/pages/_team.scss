@@ -1,5 +1,13 @@
 @use "../../utils" as *;
 
+@media #{$lg}{
+    .ed_team_area {
+        padding-right: 15px;
+        padding-left: 15px;
+
+    }
+}
+
 .ed_team {
     &_thumb {
         & img {
@@ -8,7 +16,7 @@
     }
 
     &_info {
-        @media #{$xxlm,$xl} {
+        @media #{$xxlm,$xl,$lg} {
             margin-left: 0;
         }
         & span {
@@ -43,6 +51,10 @@
     &_title {
         font-size: 30px;
         margin-bottom: 10px;
+        @media #{$lg}{
+            font-size: 20px;
+            
+        }
     }
 }
 

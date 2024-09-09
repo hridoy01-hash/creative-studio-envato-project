@@ -8,6 +8,9 @@
         @media #{$xl} {
             font-size: 80px;
         }
+        @media #{$lg} {
+            font-size: 60px;
+        }
     }
 
     &_name {
@@ -37,9 +40,8 @@
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
-            @media #{$xl} {
+            @media #{$xl,$lg} {
                 top: 0;
-                
             }
         }
 
@@ -90,6 +92,10 @@
         z-index: 10;
         transform: translateX(-50%);
     }
+    @media #{$lg} {
+        left: 0;
+        z-index: 10;
+    }
 
     &_next {
         & i {
@@ -115,6 +121,10 @@
             bottom: -10%;
             z-index: 10;
             transform: translate(-50%, 10px);
+        }
+        @media #{$lg} {
+            right:0;
+            z-index: 10;
         }
 
         & i {

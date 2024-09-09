@@ -25,6 +25,10 @@
         @media #{$xl} {
             font-size: 85px;
         }
+        @media #{$lg} {
+            font-size: 70px;
+            line-height: 1.4;
+        }
         & span {
             background: radial-gradient(42.24% 2817.5% at 52.45% 54.17%, rgba(255, 232, 21, 0.95) 0%, #3c7fff 100%);
             -webkit-background-clip: text;
@@ -56,6 +60,10 @@
         right: 193px;
         height: 145px;
         width: 145px;
+        @media #{$lg} {
+            width: 11%;
+            height: 13%;
+        }
     }
 
     &_3 {
@@ -65,6 +73,11 @@
         right: 308px;
         height: 170px;
         width: 170px;
+        @media #{$lg} {
+            width: 11%;
+            height: 13%;
+        }
+
     }
 
     &_4 {
