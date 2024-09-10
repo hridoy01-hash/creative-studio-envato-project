@@ -1,7 +1,7 @@
 @use '../../utils'as *;
 
 .ed_blog {
-    @media #{$xl,$lg} {
+    @media #{$xl,$lg,$md} {
         &_content {
             padding-left: 0;
         }
@@ -13,6 +13,9 @@
         font-size: 30px;
         line-height: 1.2;
         color: #0a0e1a;
+        @media #{$md}{
+            font-size: 25px;  
+        }
     }
 
     &_meta {

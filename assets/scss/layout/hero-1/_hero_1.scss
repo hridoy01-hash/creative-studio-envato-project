@@ -6,6 +6,9 @@
     font-family: var(--ecom-heading-font);
     position: relative;
     z-index: 1;
+    @media #{$md} {
+        padding: 265px 0px 170px 0px;
+    }
 }
 
 .ed_hero_black {
@@ -27,6 +30,10 @@
         }
         @media #{$lg} {
             font-size: 70px;
+            line-height: 1.4;
+        }
+        @media #{$md} {
+            font-size: 65px;
             line-height: 1.4;
         }
         & span {

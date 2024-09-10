@@ -219,6 +219,12 @@
     font-size: 50px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed_section_title {
+    font-size: 38px;
+    margin: 0;
+  }
+}
 
 * {
   margin: 0;
@@ -5629,11 +5635,29 @@ img {
   }
   .ed_about_img {
     padding-left: 10px;
+    border-radius: 10px;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed_about_box {
+    padding-left: 0;
+  }
+  .ed_about_img {
+    padding-left: 0;
+  }
+}
+.ed_about_img img {
+  border-radius: 10px;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ed_about_video {
-    padding-left: 30px;
+    padding-left: 5px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed_about_video {
+    padding-left: 0;
   }
 }
 .ed_about_video_info {
@@ -5668,7 +5692,7 @@ img {
 .ed_about_shape_2 {
   position: absolute;
   z-index: 1;
-  max-width: 444px;
+  max-width: 200px;
 }
 .ed_about_shape_3 {
   position: absolute;
@@ -6173,7 +6197,7 @@ img {
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_blog_content {
     padding-left: 0;
   }
@@ -6184,6 +6208,11 @@ img {
   font-size: 30px;
   line-height: 1.2;
   color: #0a0e1a;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed_blog_title {
+    font-size: 25px;
+  }
 }
 .ed_blog_meta {
   display: flex;
@@ -6211,6 +6240,11 @@ img {
   position: relative;
   z-index: 1;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed_hero_area {
+    padding: 265px 0px 170px 0px;
+  }
+}
 
 .ed_hero_black {
   background-color: rgb(10, 14, 26);
@@ -6236,6 +6270,12 @@ img {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ed_hero_title {
     font-size: 70px;
+    line-height: 1.4;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .ed_hero_title {
+    font-size: 65px;
     line-height: 1.4;
   }
 }

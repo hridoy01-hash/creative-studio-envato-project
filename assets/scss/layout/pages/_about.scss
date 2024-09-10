@@ -7,13 +7,31 @@
 
     .ed_about_img {
         padding-left: 10px;
+        border-radius: 10px;
     }
+}
+
+@media #{$md} {
+    .ed_about_box {
+        padding-left: 0;
+    }
+    .ed_about_img {
+        padding-left: 0;
+    }
+}
+
+.ed_about_img img {
+    border-radius: 10px;
 }
 
 .ed_about_video {
     @media #{$lg,$xl} {
-        padding-left: 30px;
+        padding-left: 5px;
     }
+    @media #{$md} {
+        padding-left: 0;
+    }
+
 
     &_info {
         gap: 20px;
@@ -53,7 +71,7 @@
     &_2 {
         position: absolute;
         z-index: 1;
-        max-width: 444px;
+        max-width: 200px;
     }
 
     &_3 {
