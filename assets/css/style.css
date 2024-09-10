@@ -202,7 +202,7 @@
 
 .ed_section_title {
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000;
   line-height: 1.1;
 }
@@ -5623,7 +5623,7 @@ img {
   font-family: var(--ecom-body-font);
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ed_about_box {
     padding-left: 10px;
   }
@@ -5631,7 +5631,7 @@ img {
     padding-left: 10px;
   }
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ed_about_video {
     padding-left: 30px;
   }
@@ -5698,6 +5698,12 @@ img {
   color: #0A0E1A;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ed_contact_from_area {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
 .custom-row {
   display: flex;
   align-items: center;
@@ -6067,7 +6073,10 @@ img {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ed_project_tab_area {
-    padding-right: 0;
+    padding-right: 30px;
+  }
+  .ed_project_tab_content {
+    padding-left: 15px;
   }
 }
 .ed_project_tab button {
@@ -6093,8 +6102,8 @@ img {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ed_project_tab button {
-    font-size: 40px;
-    padding: 12px 20px;
+    font-size: 55px;
+    padding: 12px 40px;
   }
 }
 .ed_project_tab button.active {
@@ -6136,6 +6145,11 @@ img {
 .ed_award_wrapper {
   padding-right: 85px;
 }
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ed_award_wrapper {
+    padding-right: 0;
+  }
+}
 .ed_award span {
   font-family: var(--ecom-heading-font);
   font-size: 20px;
@@ -6159,6 +6173,11 @@ img {
   }
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
+  .ed_blog_content {
+    padding-left: 0;
+  }
+}
 .ed_blog_title {
   font-family: var(--ecom-heading-font);
   font-weight: 400;

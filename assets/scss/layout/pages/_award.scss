@@ -32,6 +32,9 @@
     padding: 35px 0px;
     &_wrapper {
         padding-right: 85px;
+        @media #{$lg}{
+            padding-right: 0;
+        }
     }
     & span {
         font-family: var(--ecom-heading-font);

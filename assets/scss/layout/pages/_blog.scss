@@ -1,6 +1,12 @@
 @use '../../utils'as *;
 
 .ed_blog {
+    @media #{$xl,$lg} {
+        &_content {
+            padding-left: 0;
+        }
+    }
+
     &_title {
         font-family: var(--ecom-heading-font);
         font-weight: 400;

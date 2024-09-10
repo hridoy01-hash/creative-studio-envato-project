@@ -1,18 +1,31 @@
-@use '../../utils' as *;
-.fs_100{
+@use '../../utils'as *;
+
+.fs_100 {
     font-size: 100px;
     color: #0A0E1A;
     font-weight: 400;
-    @media #{$xl}{
+
+    @media #{$xl} {
         font-size: 80px;
     }
 }
-.ed_form_title{
+
+.ed_form_title {
     font-size: 30px;
 }
-.ed_contact_form_box{
-    & input, & textarea{
+
+.ed_contact_form_box {
+
+    & input,
+    & textarea {
         border-color: #57595c;
         color: #0A0E1A;
+    }
+}
+
+@media #{$lg} {
+    .ed_contact_from_area {
+        padding-top: 90px;
+        padding-bottom: 90px;
     }
 }

@@ -1,10 +1,18 @@
-@use "../../utils" as *;
-@media #{$lg}{
+@use "../../utils"as *;
+
+@media #{$lg} {
     .ed_project_tab_area {
-        padding-right: 0;
-        
+        padding-right: 30px;
+
     }
+
+    .ed_project_tab_content {
+        padding-left: 15px;
+
+    }
+
 }
+
 .ed_project {
     &_tab {
         & button {
@@ -16,33 +24,39 @@
             padding: 12px 100px;
             padding-right: 35px;
             transition: all 0.2s linear;
+
             @media #{$xxlm} {
                 font-size: 70px;
             }
+
             @media #{$xl} {
                 font-size: 65px;
                 padding: 12px 50px;
-                
+
             }
+
             @media #{$lg} {
-                font-size: 40px;
-                padding: 12px 20px;  
+                font-size: 55px;
+                padding: 12px 40px;
             }
+
             &.active {
                 border-bottom: 1px solid var(--ecom-theme-sec-color);
                 color: var(--ecom-theme-sec-color);
             }
         }
     }
+
     &_tab_thumb {
         @media #{$lg} {
             display: flex;
             align-items: center;
-            justify-content: center; 
-            margin-top: 25px; 
+            justify-content: center;
+            margin-top: 25px;
 
 
         }
+
         & img {
             border-radius: 20px;
             max-width: 100%;
