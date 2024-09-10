@@ -1,10 +1,9 @@
 @use "../../utils" as *;
 
-@media #{$lg}{
+@media #{$lg,$md} {
     .ed_team_area {
         padding-right: 15px;
         padding-left: 15px;
-
     }
 }
 
@@ -16,7 +15,7 @@
     }
 
     &_info {
-        @media #{$xxlm,$xl,$lg} {
+        @media #{$xxlm,$xl,$lg,$md } {
             margin-left: 0;
         }
         & span {
@@ -51,9 +50,8 @@
     &_title {
         font-size: 30px;
         margin-bottom: 10px;
-        @media #{$lg}{
+        @media #{$lg} {
             font-size: 20px;
-            
         }
     }
 }
@@ -74,7 +72,6 @@
         border-radius: 100%;
         margin: 0 10px;
         margin-top: 16px;
-        
     }
     & .ed_team_btn_prev,
     .ed_team_btn_next {

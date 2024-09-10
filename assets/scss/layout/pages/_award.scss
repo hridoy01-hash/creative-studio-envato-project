@@ -18,7 +18,7 @@
                 padding-top: 0;
             }
         }
-        & .col-md-6:nth-last-child(-n+2) {
+        & .col-md-6:nth-last-child(-n + 2) {
             & .ed_award {
                 padding-bottom: 0;
                 border-bottom: 0;
@@ -32,7 +32,7 @@
     padding: 35px 0px;
     &_wrapper {
         padding-right: 85px;
-        @media #{$lg}{
+        @media #{$lg,$md } {
             padding-right: 0;
         }
     }
@@ -42,15 +42,15 @@
         color: #57595c;
         display: inline-block;
         margin-bottom: 10px;
-        @media #{$xl}{
+        @media #{$xl} {
             font-size: 15px;
         }
     }
     &_title {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 28px;
         margin: 0;
-        @media #{$xl}{
+        @media #{$xl} {
             font-size: 22px;
         }
     }

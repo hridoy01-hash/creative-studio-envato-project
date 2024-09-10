@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .ed_fact {
@@ -33,5 +34,10 @@
             display: inline-block;
             margin-top: 28px;
         }
+    }
+}
+.cols {
+    @media #{$md} {
+        width: 50%;
     }
 }

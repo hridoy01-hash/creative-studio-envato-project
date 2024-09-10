@@ -1,16 +1,18 @@
-@use "../../utils"as *;
+@use "../../utils" as *;
 
 @media #{$lg} {
     .ed_project_tab_area {
         padding-right: 30px;
-
     }
 
     .ed_project_tab_content {
         padding-left: 15px;
-
     }
-
+}
+@media #{$md} {
+    .ed_project_tab_area {
+        padding-right: 0;
+    }
 }
 
 .ed_project {
@@ -24,7 +26,7 @@
             padding: 12px 100px;
             padding-right: 35px;
             transition: all 0.2s linear;
-
+            text-align: left;
             @media #{$xxlm} {
                 font-size: 70px;
             }
@@ -32,17 +34,26 @@
             @media #{$xl} {
                 font-size: 65px;
                 padding: 12px 50px;
-
             }
 
             @media #{$lg} {
-                font-size: 55px;
+                font-size: 60px;
+                padding: 12px 40px;
+            }
+            @media #{$md} {
+                font-size: 55px; 
+                width: 100%;
                 padding: 12px 40px;
             }
 
             &.active {
                 border-bottom: 1px solid var(--ecom-theme-sec-color);
                 color: var(--ecom-theme-sec-color);
+            }
+        }
+        @media #{$md} {
+            &_content {
+                padding-left: 0;
             }
         }
     }
@@ -53,8 +64,10 @@
             align-items: center;
             justify-content: center;
             margin-top: 25px;
-
-
+        }
+        @media #{$md} {
+            padding-left: 30px;
+            padding-right: 30px;
         }
 
         & img {

@@ -1,4 +1,4 @@
-@use '../../utils'as *;
+@use "../../utils" as *;
 
 .ed_footer {
     &_separetor {
@@ -18,7 +18,7 @@
     &_widget {
         &_title {
             font-size: 20px;
-            color: #FFFFFF;
+            color: #ffffff;
         }
 
         & ul {
@@ -27,7 +27,7 @@
             & li {
                 & a {
                     font-size: 17px;
-                    color: #B1B4BA;
+                    color: #b1b4ba;
                 }
 
                 &:not(:last-child) {
@@ -41,7 +41,7 @@
 .ed_footer_content {
     & span {
         font-size: 17px;
-        color: #B1B4BA;
+        color: #b1b4ba;
     }
 }
 
@@ -53,13 +53,19 @@
 
         & span {
             font-size: 17px;
-            color: #B1B4BA;
+            color: #b1b4ba;
         }
 
         & h4 {
             font-size: 30px;
-            color: #FFFFFF;
+            color: #ffffff;
             @media #{$xl} {
+                font-size: 24px;
+            }
+            @media #{$lg} {
+                font-size: 25px;
+            }
+            @media #{$md} {
                 font-size: 24px;
             }
         }
@@ -70,19 +76,25 @@
     &_3 {
         padding-left: 55px;
         position: relative;
+        @media #{$md} {
+            padding-left: 0;
+        }
     }
 
     &_4 {
         padding-left: 55px;
-
+        @media #{$md} {
+            padding-left: 0;
+        }
         &::before {
             left: -65px;
+            @media #{$md} {
+                display: none;
+            }
         }
     }
 
     &_3 {
-        position: relative;
-
         &::before,
         &::after {
             content: "";
@@ -93,6 +105,9 @@
             opacity: 0.15;
             left: -40px;
             top: 0px;
+            @media #{$md} {
+                display: none;
+            }
         }
 
         &:after {
@@ -105,7 +120,7 @@
 .ed_footer_copyright {
     & p {
         font-size: 17px;
-        color: #B1B4BA;
+        color: #b1b4ba;
         margin: 0;
 
         & a {
@@ -122,7 +137,10 @@
             padding-left: 33px;
             margin-left: 33px;
             position: relative;
-
+            &:first-child {
+                margin-left: 0;
+                padding-left: 0;
+            }
             &:not(:first-child)::before {
                 content: "";
                 position: absolute;
@@ -132,8 +150,6 @@
                 left: 0;
                 top: 8px;
             }
-
-
 
             & a {
                 font-weight: 500;
@@ -163,7 +179,6 @@
     &_3 {
         top: 302px;
         left: 328px;
-
     }
 
     &_4 {

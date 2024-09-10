@@ -13,7 +13,7 @@
         font-size: 30px;
         line-height: 1.2;
         color: #0a0e1a;
-        @media #{$md}{
+        @media #{$lg ,$md}{
             font-size: 25px;  
         }
     }

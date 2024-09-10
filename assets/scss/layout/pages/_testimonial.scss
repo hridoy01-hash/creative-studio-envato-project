@@ -11,6 +11,10 @@
         @media #{$lg} {
             font-size: 60px;
         }
+        @media #{$md} {
+            font-size: 55px;
+
+        }
     }
 
     &_name {
@@ -40,8 +44,11 @@
             top: 50px;
             left: 50%;
             transform: translateX(-50%);
-            @media #{$xl,$lg} {
+            @media #{$xl,$lg,$md} {
                 top: 0;
+            }
+            @media #{$md} {
+                width: 80%;
             }
         }
 
@@ -85,10 +92,10 @@
         z-index: 10;
     }
 
-    @media #{$xl} {
+    @media #{$xl,$md } {
         left: 50%;
         top: inherit;
-        bottom: -11%;
+        bottom: -19%;
         z-index: 10;
         transform: translateX(-50%);
     }
@@ -101,6 +108,13 @@
         & i {
             font-size: 45px;
             display: inline-flex;
+        }
+        @media #{$md} {
+            left: 50%;
+            top: inherit;
+            bottom: -21%; 
+            z-index: 10;
+            transform: translateX(-45%); 
         }
     }
 
@@ -115,15 +129,23 @@
             z-index: 10;
         }
 
-        @media #{$xl} {
+        @media #{$xl,$md} {
             right: 39%;
             left: inherit;
             bottom: -10%;
             z-index: 10;
             transform: translate(-50%, 10px);
         }
+        @media #{$md} {
+            right: 35%;
+            left: inherit;
+            bottom: -18%; 
+            z-index: 10;
+            transform: translate(-50%, 14px);
+        }
+
         @media #{$lg} {
-            right:0;
+            right: 0;
             z-index: 10;
         }
 

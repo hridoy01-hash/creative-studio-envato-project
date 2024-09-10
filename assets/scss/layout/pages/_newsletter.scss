@@ -11,9 +11,12 @@
         @media #{$xl} {
             padding: 50px 70px;
         }
+        @media #{$md} {
+            padding: 40px 60px;
+        }
     }
     &_box {
-        @media #{$lg}{
+        @media #{$lg} {
             margin-top: 10px;
         }
         & form {
@@ -53,7 +56,11 @@
                 font-size: 70px;
                 bottom: -5px;
                 left: 80px;
-                
+            }
+            @media #{$md} {
+                font-size: 60px; 
+                bottom: -5px;
+                left: 70px;
             }
         }
     }
