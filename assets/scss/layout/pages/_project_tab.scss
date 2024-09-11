@@ -1,16 +1,20 @@
 @use "../../utils" as *;
 
-@media #{$lg} {
-    .ed_project_tab_area {
+.ed_project_tab_content {
+    @media #{$lg} {
         padding-right: 30px;
     }
-
-    .ed_project_tab_content {
+    @media #{$xs} {
+        padding-right: 15px;
         padding-left: 15px;
     }
 }
-@media #{$md} {
-    .ed_project_tab_area {
+
+.ed_project_tab_area {
+    @media #{$md} {
+        padding-right: 0;
+    }
+    @media #{$xs} {
         padding-right: 0;
     }
 }
@@ -41,9 +45,12 @@
                 padding: 12px 40px;
             }
             @media #{$md} {
-                font-size: 55px; 
-                width: 100%;
+                font-size: 40px;
                 padding: 12px 40px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+                padding: 12px 10px;
             }
 
             &.active {
@@ -66,7 +73,7 @@
             margin-top: 25px;
         }
         @media #{$md} {
-            padding-left: 30px;
+            padding-left: 0;
             padding-right: 30px;
         }
 

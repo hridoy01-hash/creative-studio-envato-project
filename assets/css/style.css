@@ -184,6 +184,12 @@
     padding: 40px 60px;
   }
 }
+@media (max-width: 767px) {
+  .ed_btn_circle {
+    font-size: 45px;
+    padding: 40px 60px;
+  }
+}
 
 .ed_text_btn {
   font-family: var(--ecom-heading-font);
@@ -224,6 +230,14 @@
     font-size: 38px;
     margin: 0;
   }
+}
+@media (max-width: 767px) {
+  .ed_section_title {
+    font-size: 38px;
+  }
+}
+.ed_section_title_wrapper p br {
+  display: none;
 }
 
 * {
@@ -5664,19 +5678,38 @@ img {
   .ed_about_box {
     padding-left: 10px;
   }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ed_about_img {
     padding-left: 10px;
     border-radius: 10px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_about_box {
     padding-left: 0;
   }
+}
+@media (max-width: 767px) {
+  .ed_about_box {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_about_img {
     padding-left: 0;
   }
 }
+@media (max-width: 767px) {
+  .ed_about_img {
+    margin-bottom: 30px;
+    padding-left: 0;
+  }
+}
+
 .ed_about_img img {
   border-radius: 10px;
 }
@@ -5686,7 +5719,7 @@ img {
     padding-left: 5px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .ed_about_video {
     padding-left: 0;
   }
@@ -5946,6 +5979,11 @@ img {
     font-size: 55px;
   }
 }
+@media (max-width: 767px) {
+  .ed_testimonial_desc {
+    font-size: 40px;
+  }
+}
 .ed_testimonial_name {
   font-size: 30px;
   margin-bottom: 5px;
@@ -5954,6 +5992,12 @@ img {
   color: #57595c;
   font-size: 17px;
   margin-left: 146px;
+}
+@media (max-width: 767px) {
+  .ed_testimonial_desgin {
+    font-size: 15px;
+    margin-left: 92px;
+  }
 }
 .ed_testimonial_desgin span {
   height: 1px;
@@ -6050,6 +6094,13 @@ img {
     transform: translateX(-45%);
   }
 }
+@media (max-width: 767px) {
+  .ed_testimonial_btn_next {
+    left: 30%;
+    top: inherit;
+    bottom: -14%;
+  }
+}
 .ed_testimonial_btn_prev {
   left: auto;
   right: -100px;
@@ -6086,6 +6137,14 @@ img {
     z-index: 10;
   }
 }
+@media (max-width: 767px) {
+  .ed_testimonial_btn_prev {
+    right: 32%;
+    top: 100%;
+    left: inherit;
+    transform: translate(-50%, 7px);
+  }
+}
 .ed_testimonial_btn_prev i {
   font-size: 45px;
   display: inline-flex;
@@ -6110,6 +6169,11 @@ img {
     padding: 40px 60px;
   }
 }
+@media (max-width: 767px) {
+  .ed_news_letter_bg {
+    padding: 30px 40px;
+  }
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ed_news_letter_box {
     margin-top: 10px;
@@ -6120,6 +6184,11 @@ img {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+@media (max-width: 767px) {
+  .ed_news_letter_box form {
+    display: block;
+  }
 }
 .ed_news_letter_box input {
   border-color: #fff;
@@ -6142,6 +6211,12 @@ img {
 }
 .ed_news_letter_box_input {
   width: calc(100% - 206px);
+}
+@media (max-width: 767px) {
+  .ed_news_letter_box_input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .ed_news_letter_box_input img {
   position: absolute;
@@ -6174,18 +6249,28 @@ img {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .ed_project_tab_area {
+  .ed_project_tab_content {
     padding-right: 30px;
   }
+}
+@media (max-width: 767px) {
   .ed_project_tab_content {
+    padding-right: 15px;
     padding-left: 15px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_project_tab_area {
     padding-right: 0;
   }
 }
+@media (max-width: 767px) {
+  .ed_project_tab_area {
+    padding-right: 0;
+  }
+}
+
 .ed_project_tab button {
   color: #fff;
   font-size: 100px;
@@ -6216,9 +6301,14 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_project_tab button {
-    font-size: 55px;
-    width: 100%;
+    font-size: 40px;
     padding: 12px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .ed_project_tab button {
+    font-size: 20px;
+    padding: 12px 10px;
   }
 }
 .ed_project_tab button.active {
@@ -6240,7 +6330,7 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_project_tab_thumb {
-    padding-left: 30px;
+    padding-left: 0;
     padding-right: 30px;
   }
 }
@@ -6347,6 +6437,11 @@ img {
     padding: 265px 0px 170px 0px;
   }
 }
+@media (max-width: 767px) {
+  .ed_hero_area {
+    padding: 200px 0px 110px 0px;
+  }
+}
 
 .ed_hero_black {
   background-color: rgb(10, 14, 26);
@@ -6378,6 +6473,12 @@ img {
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_hero_title {
     font-size: 65px;
+    line-height: 1.4;
+  }
+}
+@media (max-width: 767px) {
+  .ed_hero_title {
+    font-size: 37px;
     line-height: 1.4;
   }
 }

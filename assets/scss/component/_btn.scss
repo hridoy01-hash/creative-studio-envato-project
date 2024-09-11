@@ -35,8 +35,11 @@
       display: inline-block;
       line-height: 1;
       border-radius: 100%;
-
       @media #{$xl} {
+         font-size: 45px;
+         padding: 40px 60px;
+      }
+      @media #{$xs} {
          font-size: 45px;
          padding: 40px 60px;
       }

@@ -13,7 +13,9 @@
         }
         @media #{$md} {
             font-size: 55px;
-
+        }
+        @media #{$xs} {
+            font-size: 40px;
         }
     }
 
@@ -26,7 +28,10 @@
         color: #57595c;
         font-size: 17px;
         margin-left: 146px;
-
+        @media #{$xs} {
+            font-size: 15px;
+            margin-left: 92px;
+        }
         & span {
             height: 1px;
             width: 60px;
@@ -112,9 +117,14 @@
         @media #{$md} {
             left: 50%;
             top: inherit;
-            bottom: -21%; 
+            bottom: -21%;
             z-index: 10;
-            transform: translateX(-45%); 
+            transform: translateX(-45%);
+        }
+        @media #{$xs} {
+            left: 30%;
+            top: inherit;
+            bottom: -14%;
         }
     }
 
@@ -136,10 +146,10 @@
             z-index: 10;
             transform: translate(-50%, 7px);
         }
-        @media #{$md} {
+        @media #{$md } {
             right: 35%;
             left: inherit;
-            bottom: -18%; 
+            bottom: -18%;
             z-index: 10;
             transform: translate(-50%, 14px);
         }
@@ -147,6 +157,12 @@
         @media #{$lg} {
             right: 0;
             z-index: 10;
+        }
+        @media #{$xs} {
+            right: 32%;
+            top: 100%;
+            left: inherit; 
+            transform: translate(-50%, 7px);
         }
 
         & i {

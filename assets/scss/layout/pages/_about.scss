@@ -1,25 +1,35 @@
-@use "../../utils"as *;
+@use "../../utils" as *;
 
-@media #{$lg,$xl} {
-    .ed_about_box {
+.ed_about_box {
+    @media #{$lg,$xl} {
         padding-left: 10px;
     }
+}
 
-    .ed_about_img {
+.ed_about_img {
+    @media #{$lg,$xl} {
         padding-left: 10px;
         border-radius: 10px;
     }
 }
 
-@media #{$md} {
-    .ed_about_box {
+.ed_about_box {
+    @media #{$md} {
         padding-left: 0;
     }
-    .ed_about_img {
+    @media #{$xs} {
         padding-left: 0;
     }
 }
-
+.ed_about_img {
+    @media #{$md} {
+        padding-left: 0;
+    }
+    @media #{$xs} {
+        margin-bottom: 30px;
+        padding-left: 0; 
+    }
+}
 .ed_about_img img {
     border-radius: 10px;
 }
@@ -28,10 +38,9 @@
     @media #{$lg,$xl} {
         padding-left: 5px;
     }
-    @media #{$md} {
+    @media #{$md,$xs } {
         padding-left: 0;
     }
-
 
     &_info {
         gap: 20px;

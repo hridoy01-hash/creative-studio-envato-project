@@ -9,6 +9,9 @@
     @media #{$md} {
         padding: 265px 0px 170px 0px;
     }
+    @media #{$xs} {
+        padding: 200px 0px 110px 0px;
+    }
 }
 
 .ed_hero_black {
@@ -34,6 +37,10 @@
         }
         @media #{$md} {
             font-size: 65px;
+            line-height: 1.4;
+        }
+        @media #{$xs} {
+            font-size: 37px;
             line-height: 1.4;
         }
         & span {
@@ -84,7 +91,6 @@
             width: 11%;
             height: 13%;
         }
-
     }
 
     &_4 {

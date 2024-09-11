@@ -14,6 +14,9 @@
         @media #{$md} {
             padding: 40px 60px;
         }
+        @media #{$xs} {
+            padding: 30px 40px;
+        }
     }
     &_box {
         @media #{$lg} {
@@ -24,6 +27,9 @@
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+            @media #{$xs} {
+                display: block;
+            }
         }
         & input {
             border-color: #fff;
@@ -37,6 +43,10 @@
         }
         &_input {
             width: calc(100% - 206px);
+            @media #{$xs} {
+                width: 100%;
+                margin-bottom: 20px;
+            }
             & img {
                 position: absolute;
                 top: 23px;
@@ -58,7 +68,7 @@
                 left: 80px;
             }
             @media #{$md} {
-                font-size: 60px; 
+                font-size: 60px;
                 bottom: -5px;
                 left: 70px;
             }
