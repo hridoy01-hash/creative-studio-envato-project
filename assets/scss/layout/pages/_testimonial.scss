@@ -129,12 +129,12 @@
             z-index: 10;
         }
 
-        @media #{$xl,$md} {
-            right: 39%;
+        @media #{$xl} {
+            right: 41%;
             left: inherit;
-            bottom: -10%;
+            bottom: -18%;
             z-index: 10;
-            transform: translate(-50%, 10px);
+            transform: translate(-50%, 7px);
         }
         @media #{$md} {
             right: 35%;

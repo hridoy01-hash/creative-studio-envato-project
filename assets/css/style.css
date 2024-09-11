@@ -6062,13 +6062,13 @@ img {
     z-index: 10;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ed_testimonial_btn_prev {
-    right: 39%;
+    right: 41%;
     left: inherit;
-    bottom: -10%;
+    bottom: -18%;
     z-index: 10;
-    transform: translate(-50%, 10px);
+    transform: translate(-50%, 7px);
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
