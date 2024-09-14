@@ -9,6 +9,11 @@
     &_white {
         color: #fff;
     }
+    & br{
+        @media #{$xs}{
+            display: none; 
+        }
+    }
 
     @media #{$xl} {
         font-size: 52px;
