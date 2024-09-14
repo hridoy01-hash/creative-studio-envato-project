@@ -5959,6 +5959,10 @@ img {
   display: inline-flex;
 }
 
+.ed_testimonial_arrow_btns {
+  position: relative;
+}
+
 .ed_testimonial_desc {
   font-size: 100px;
   font-weight: 400;
@@ -6087,18 +6091,19 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_testimonial_btn_next {
-    left: 50%;
+    left: 41%;
     top: inherit;
     bottom: -21%;
     z-index: 10;
-    transform: translateX(-45%);
+    transform: translate(50%, 100%);
   }
 }
 @media (max-width: 767px) {
   .ed_testimonial_btn_next {
-    left: 30%;
+    left: 27%;
     top: inherit;
-    bottom: -14%;
+    bottom: -42px;
+    transform: translate(50%, 50%);
   }
 }
 .ed_testimonial_btn_prev {
@@ -6124,11 +6129,11 @@ img {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .ed_testimonial_btn_prev {
-    right: 35%;
+    right: 38%;
     left: inherit;
-    bottom: -18%;
+    bottom: -22%;
     z-index: 10;
-    transform: translate(-50%, 14px);
+    transform: translate(-50%, 100%);
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -6139,10 +6144,10 @@ img {
 }
 @media (max-width: 767px) {
   .ed_testimonial_btn_prev {
-    right: 32%;
-    top: 100%;
+    right: 30%;
+    top: 0;
     left: inherit;
-    transform: translate(-50%, 7px);
+    transform: translate(-50%, 35%);
   }
 }
 .ed_testimonial_btn_prev i {

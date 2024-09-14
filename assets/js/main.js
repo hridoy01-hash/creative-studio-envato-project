@@ -61,6 +61,9 @@
             prevEl: ".ed_team_btn_prev",
         },
         breakpoints:{
+            360:{
+                slidesPerView:1
+            },
             640:{
                 slidesPerView:2
             },
