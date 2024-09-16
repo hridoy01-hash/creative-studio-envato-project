@@ -45,7 +45,7 @@
         }
     });
 
-    // ed_testimonial slider
+    // ed_team slider
     var swiper = new Swiper(".ed_team_slide_active", {
         slidesPerView: 4,
         spaceBetween: 30,

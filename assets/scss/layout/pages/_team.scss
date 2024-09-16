@@ -1,6 +1,6 @@
 @use "../../utils" as *;
 
-@media #{$lg,$md} {
+@media #{$lg,$md,$xs} {
     .ed_team_area {
         padding-right: 15px;
         padding-left: 15px;
@@ -15,7 +15,7 @@
     }
 
     &_info {
-        @media #{$xxlm,$xl,$lg,$md } {
+        @media #{$xxlm,$xl,$lg,$md,$xs} {
             margin-left: 0;
         }
         & span {
@@ -64,6 +64,9 @@
     display: flex;
     justify-content: end;
     align-content: center;
+    @media #{$xs}{
+        justify-content: start; 
+    }
     & span {
         height: 12px;
         width: 12px;

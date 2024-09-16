@@ -36,8 +36,13 @@
         }
     }
 }
+
 .cols {
     @media #{$md} {
         width: 50%;
+    }
+
+    @media #{$xs} {
+        width: 100%;
     }
 }

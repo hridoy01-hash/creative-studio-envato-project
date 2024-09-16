@@ -1,9 +1,5 @@
 @use "../../utils" as *;
 
-.ed_testimonial_arrow_btns {
-    position: relative;
-}
-
 .ed_testimonial {
     &_desc {
         font-size: 100px;
@@ -111,10 +107,17 @@
         z-index: 10;
     }
 
-    @media #{$xl,$md } {
+    @media #{$xl } {
         left: 50%;
         top: inherit;
-        bottom: -19%;
+        bottom: -19%;  
+        z-index: 10;
+        transform: translateX(-50%);
+    }
+    @media #{$md} {
+        left: 50%;
+        top: inherit;
+        bottom: -2%; 
         z-index: 10;
         transform: translateX(-50%);
     }
@@ -133,16 +136,16 @@
         @media #{$md} {
             left: 41%;
             top: inherit;
-            bottom: -21%;
+            bottom: -4%;
             z-index: 10;
             transform: translate(50%,100%);
         }
 
         @media #{$xs} {
-            left: 27%;
+            left: 38%; 
             top: inherit;
             bottom: -42px;
-            transform: translate(50%, 50%);
+            transform: translate(-22%, 50%); 
         }
     }
 
@@ -168,7 +171,7 @@
         @media #{$md } {
             right: 38%;
             left: inherit;
-            bottom: -22%;
+            bottom: -5%;
             z-index: 10;
             transform: translate(-50%, 100%);
         }
@@ -180,7 +183,7 @@
 
         @media #{$xs} {
             right: 30%;
-            top: 0;
+            top: inherit;
             left: inherit;
             transform: translate(-50%, 35%);
         }

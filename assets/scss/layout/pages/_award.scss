@@ -1,57 +1,85 @@
 @use "../../utils/" as *;
 
-.ed_award_wrapper {
-    & .row {
-        & .col-md-6:nth-child(even) {
-            & .ed_award {
-                padding-left: 50px;
-                border-left: 1px solid #57595c;
-            }
-        }
-        & .col-md-6:nth-child(1) {
-            & .ed_award {
-                padding-top: 0;
-            }
-        }
-        & .col-md-6:nth-child(2) {
-            & .ed_award {
-                padding-top: 0;
-            }
-        }
-        & .col-md-6:nth-last-child(-n + 2) {
-            & .ed_award {
-                padding-bottom: 0;
-                border-bottom: 0;
-            }
-        }
-    }
-}
-
 .ed_award {
     border-bottom: 1px solid #57595c;
     padding: 35px 0px;
+
     &_wrapper {
         padding-right: 85px;
+
         @media #{$lg,$md } {
             padding-right: 0;
         }
     }
+
     & span {
         font-family: var(--ecom-heading-font);
         font-size: 20px;
         color: #57595c;
         display: inline-block;
         margin-bottom: 10px;
+
         @media #{$xl} {
             font-size: 15px;
         }
     }
+
     &_title {
         font-weight: 700;
         font-size: 28px;
         margin: 0;
+
         @media #{$xl} {
             font-size: 22px;
+        }
+    }
+}
+
+.ed_award_wrapper {
+    & .row {
+        & .col-md-6:nth-child(even) {
+            & .ed_award {
+                padding-left: 50px;
+                border-left: 1px solid #57595c;
+
+                @media #{$xs} {
+                    padding-left: 0;
+                    border-left: 0;
+                }
+            }
+        }
+
+        & .col-md-6:nth-child(1) {
+            & .ed_award {
+                padding-top: 0;
+            }
+        }
+
+        & .col-md-6:nth-child(2) {
+            & .ed_award {
+                padding-top: 0;
+
+                @media #{$xs} {
+                    padding-top: 38px;
+                }
+            }
+        }
+
+        & .col-md-6:nth-last-child(-n + 2) {
+            & .ed_award {
+                padding-bottom: 0;
+
+                @media #{$xs} {
+                    border-left: 0;
+                    border-bottom: 1px solid #57595c;
+                    padding-bottom: 38px;
+                }
+
+                @media #{$md,lg,$xl,$xxlm,$xxl} {
+                    border-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
         }
     }
 }
