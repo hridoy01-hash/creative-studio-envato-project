@@ -1,4 +1,4 @@
-@use "../utils"as *;
+@use "../utils" as *;
 
 .ed_btn {
    font-family: var(--ecom-heading-font);
@@ -35,13 +35,15 @@
       display: inline-block;
       line-height: 1;
       border-radius: 100%;
+
       @media #{$xl} {
          font-size: 45px;
          padding: 40px 60px;
       }
+
       @media #{$xs} {
          font-size: 45px;
-         padding: 40px 60px;
+         padding: 30px 35px;
       }
    }
 }

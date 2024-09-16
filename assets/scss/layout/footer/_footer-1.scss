@@ -38,6 +38,13 @@
     }
 }
 
+.ed_footer_social {
+    @media #{$xs} {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
 .ed_footer_content {
     & span {
         font-size: 17px;
@@ -59,12 +66,15 @@
         & h4 {
             font-size: 30px;
             color: #ffffff;
+
             @media #{$xl} {
                 font-size: 24px;
             }
+
             @media #{$lg} {
                 font-size: 25px;
             }
+
             @media #{$md} {
                 font-size: 24px;
             }
@@ -76,18 +86,33 @@
     &_3 {
         padding-left: 55px;
         position: relative;
+
         @media #{$md} {
-            padding-left: 0;
+            padding-left: 15px;
         }
+
+        @media #{$xs} {
+            padding-left: 15px;
+            margin-top: 50px;
+        }
+
     }
 
     &_4 {
         padding-left: 55px;
+
         @media #{$md} {
             padding-left: 0;
         }
+
+        @media #{$xs} {
+            padding-left: 15px;
+            margin-top: 50px;
+        }
+
         &::before {
             left: -65px;
+
             @media #{$md} {
                 display: none;
             }
@@ -95,6 +120,7 @@
     }
 
     &_3 {
+
         &::before,
         &::after {
             content: "";
@@ -105,7 +131,8 @@
             opacity: 0.15;
             left: -40px;
             top: 0px;
-            @media #{$md} {
+
+            @media #{$md, $xs} {
                 display: none;
             }
         }
@@ -137,10 +164,17 @@
             padding-left: 33px;
             margin-left: 33px;
             position: relative;
+
+            @media #{$xs} {
+                padding-left: 15px;
+                margin-left: 15px; 
+            }
+
             &:first-child {
                 margin-left: 0;
                 padding-left: 0;
             }
+
             &:not(:first-child)::before {
                 content: "";
                 position: absolute;
@@ -161,8 +195,14 @@
     }
 }
 
-.ed_footer_copyright_area {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+.ed_footer_copyright {
+    @media #{$xs} {
+        margin-bottom: 30px;
+    }
+
+    &_area {
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
 }
 
 .ed_footer_shape {
@@ -184,5 +224,11 @@
     &_4 {
         top: 62px;
         right: 101px;
+    }
+}
+
+.ed_footer_widget_area {
+    @media #{$xs} {
+        padding-bottom: 50px;
     }
 }

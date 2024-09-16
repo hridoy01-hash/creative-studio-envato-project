@@ -75,12 +75,19 @@
         @media #{$xl} {
             max-width: 200px;
         }
+        @media #{$xs} {
+            max-width: 100px;
+        }
     }
 
     &_2 {
         position: absolute;
         z-index: 1;
         max-width: 200px;
+        @media #{$xs} {
+            max-width: 100px;
+            right: 0;
+        }
     }
 
     &_3 {
@@ -89,5 +96,8 @@
         left: 35%;
         bottom: 250px;
         max-width: 444px;
+        @media #{$xs} {
+            max-width: 100px;
+        }
     }
 }
