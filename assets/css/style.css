@@ -6493,9 +6493,9 @@ img {
     padding-bottom: 38px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px), lg, only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1600px) and (max-width: 4000px) {
+@media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1600px) and (max-width: 4000px) {
   .ed_award_wrapper .row .col-md-6:nth-last-child(-n+2) .ed_award {
-    border-bottom: 0;
+    border-bottom: none;
     padding-bottom: 0;
   }
 }
