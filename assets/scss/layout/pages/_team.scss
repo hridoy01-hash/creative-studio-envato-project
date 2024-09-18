@@ -1,9 +1,15 @@
-@use "../../utils" as *;
+@use "../../utils"as *;
 
-@media #{$lg,$md,$xs} {
-    .ed_team_area {
+
+.ed_team_area {
+    @media #{$lg,$md} {
         padding-right: 15px;
         padding-left: 15px;
+    }
+
+    @media #{$xs} {
+        padding-right: 0;
+        padding-left: 0;
     }
 }
 

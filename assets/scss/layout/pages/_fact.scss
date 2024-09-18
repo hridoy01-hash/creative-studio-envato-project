@@ -1,4 +1,4 @@
-@use "../../utils" as *;
+@use "../../utils"as *;
 
 .custom-row {
     display: flex;
@@ -44,5 +44,9 @@
 
     @media #{$xs} {
         width: 100%;
+    }
+
+    @media #{$sm} {
+        width: 50%;
     }
 }
