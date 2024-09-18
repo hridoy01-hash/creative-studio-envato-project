@@ -153,6 +153,31 @@
   display: inline-block;
   background-color: var(--ecom-theme-color);
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.ed_btn i {
+  width: 22px;
+  height: 100%;
+  background-color: #E5CF00;
+  transform: rotate(20deg);
+  bottom: -6px;
+  right: -10px;
+  position: absolute;
+  transition: all 0.1s linear;
+}
+.ed_btn:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.ed_btn:hover .ed_btn_content_y_2 {
+  transform: translateY(-100%);
+}
+.ed_btn:hover .ed_btn_content_y_1 {
+  transform: translateY(0);
+}
+.ed_btn:hover i {
+  transform: translateX(100%);
 }
 .ed_btn_sec {
   font-family: var(--ecom-heading-font);
@@ -163,9 +188,53 @@
   display: inline-block;
   background-color: var(--ecom-theme-sec-color);
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.ed_btn_sec i {
+  width: 22px;
+  height: 100%;
+  background-color: #E5CF00;
+  transform: rotate(17deg);
+  bottom: -5px;
+  right: -10px;
+  position: absolute;
+  transition: all 0.1s linear;
 }
 .ed_btn_sec_lg {
   padding: 16px 48px;
+}
+.ed_btn_sec:hover {
+  cursor: pointer;
+}
+.ed_btn_sec:hover .ed_btn_content_y_2 {
+  transform: translateY(-100%);
+}
+.ed_btn_sec:hover .ed_btn_content_y_1 {
+  transform: translateY(0);
+}
+.ed_btn_sec:hover i {
+  transform: translateX(100%);
+}
+.ed_btn_content {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.1s linear;
+  display: block;
+}
+.ed_btn_content span {
+  display: block;
+  transition: all 0.2s linear;
+}
+.ed_btn_content_y_2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(0);
+  transition: transform 0.2s liner;
+}
+.ed_btn_content_y_1 {
+  transform: translateY(100%);
 }
 .ed_btn_circle {
   font-family: var(--ecom-heading-font);
@@ -177,6 +246,13 @@
   display: inline-block;
   line-height: 1;
   border-radius: 100%;
+  transition: opacity 0.2s ease;
+}
+.ed_btn_circle:hover {
+  background-color: var(--ecom-theme-color);
+  color: #fff;
+  opacity: 1;
+  border-color: var(--ecom-theme-color);
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .ed_btn_circle {

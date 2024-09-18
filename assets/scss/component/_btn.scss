@@ -9,6 +9,37 @@
    display: inline-block;
    background-color: var(--ecom-theme-color);
    border-radius: 5px;
+   position: relative;
+   overflow: hidden;
+
+   & i {
+      width: 22px;
+      height: 100%;
+      background-color: #E5CF00;
+      transform: rotate(20deg);
+      bottom: -6px;
+      right: -10px;
+      position: absolute;
+      transition: all 0.1s linear;
+   }
+
+   &:hover {
+      cursor: pointer;
+      color: #fff;
+
+      .ed_btn_content_y_2 {
+         transform: translateY(-100%);
+      }
+
+      .ed_btn_content_y_1 {
+         transform: translateY(0);
+      }
+
+      & i {
+         transform: translateX(100%);
+      }
+   }
+
 
    &_sec {
       font-family: var(--ecom-heading-font);
@@ -19,9 +50,62 @@
       display: inline-block;
       background-color: var(--ecom-theme-sec-color);
       border-radius: 5px;
+      position: relative;
+      overflow: hidden;
+
+      & i {
+         width: 22px;
+         height: 100%;
+         background-color: #E5CF00;
+         transform: rotate(17deg);
+         bottom: -5px;
+         right: -10px;
+         position: absolute;
+         transition: all 0.1s linear;
+      }
 
       &_lg {
          padding: 16px 48px;
+      }
+
+      &:hover {
+         cursor: pointer;
+
+         .ed_btn_content_y_2 {
+            transform: translateY(-100%);
+         }
+
+         .ed_btn_content_y_1 {
+            transform: translateY(0);
+         }
+
+         & i {
+            transform: translateX(100%);
+         }
+      }
+   }
+
+   &_content {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.1s linear;
+      display: block;
+
+      & span {
+         display: block;
+         transition: all 0.2s linear;
+      }
+
+      &_y_2 {
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         transform: translateY(0);
+         transition: transform 0.2s liner;
+      }
+
+      &_y_1 {
+         transform: translateY(100%);
       }
    }
 
@@ -35,6 +119,14 @@
       display: inline-block;
       line-height: 1;
       border-radius: 100%;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+         background-color: var(--ecom-theme-color);
+         color: #fff;
+         opacity: 1;
+         border-color: var(--ecom-theme-color);
+      }
 
       @media #{$xl} {
          font-size: 45px;

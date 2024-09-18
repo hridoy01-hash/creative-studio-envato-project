@@ -60,18 +60,18 @@
             nextEl: ".ed_team_btn_next",
             prevEl: ".ed_team_btn_prev",
         },
-        breakpoints:{
-            100:{
-                slidesPerView:1
+        breakpoints: {
+            100: {
+                slidesPerView: 1
             },
-            640:{
-                slidesPerView:2
+            640: {
+                slidesPerView: 2
             },
-            992:{
-                slidesPerView:3
+            992: {
+                slidesPerView: 3
             },
-            1200:{
-                slidesPerView:4
+            1200: {
+                slidesPerView: 4
             }
         }
     });
@@ -79,6 +79,16 @@
     // data background image
     $("[data-background]").each(function () {
         $(this).css('background-image', "url(" + $(this).attr("data-background") + ")");
+    });
+
+    // magnific img and video popup
+    $('.image-popup').magnificPopup({
+        type: 'image'
+        // other options
+    });
+    $('.video-popup').magnificPopup({
+        type: 'iframe'
+        // other options
     });
 
 })(jQuery);
