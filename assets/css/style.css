@@ -181,7 +181,7 @@
 }
 .ed_btn_sec {
   font-family: var(--ecom-heading-font);
-  padding: 21px 47px;
+  padding: 16px 48px;
   font-size: 18px;
   font-weight: 400;
   color: rgb(10, 14, 26);
@@ -202,7 +202,7 @@
   transition: all 0.1s linear;
 }
 .ed_btn_sec_lg {
-  padding: 16px 48px;
+  padding: 21px 47px;
 }
 .ed_btn_sec:hover {
   cursor: pointer;
