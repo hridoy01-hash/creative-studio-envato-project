@@ -10,7 +10,9 @@
 }
 
 .ed_header_area {
-  padding-left: 30px;
+  @media #{$md} {
+    padding-left: 30px;
+  }
 
   @media #{$xs} {
     padding-left: 15px;

@@ -1,4 +1,4 @@
-@use "../utils"as *;
+@use "../utils" as *;
 
 .w-img {
 	& img {
@@ -11,7 +11,8 @@
 		max-width: 100%;
 	}
 }
-img{
+
+img {
 	max-width: 100%;
 }
 
@@ -60,6 +61,7 @@ img{
 .ed_nblue_bg {
 	background-color: var(--ecom-nblue-color);
 }
+
 .ed_theme_bg {
 	background-color: rgba(0, 87, 252, 1);
 }
@@ -67,7 +69,8 @@ img{
 .ed_yellow_bg {
 	background-color: var(--ecom-theme-sec-color);
 }
-.ed_theme_black_bg{
+
+.ed_theme_black_bg {
 	background-color: var(--ecom-heading-color);
 }
 
@@ -81,6 +84,13 @@ img{
 	width: auto !important;
 	display: inline-block !important;
 }
-.ed_theme_cream_bg{
+
+.ed_theme_cream_bg {
 	background-color: var(--ed-theme-cream-color);
+}
+
+// hero 2
+.bg_position {
+	background-position: bottom;
+	background-repeat: no-repeat;
 }
