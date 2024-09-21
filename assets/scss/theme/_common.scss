@@ -74,6 +74,10 @@ img {
 	background-color: var(--ecom-heading-color);
 }
 
+.ed_uppercase {
+	text-transform: uppercase; 
+}
+
 // @__________brand scrolling animation _________@
 .ed_slide_transtion {
 	-webkit-transition-timing-function: linear;

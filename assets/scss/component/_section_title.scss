@@ -1,40 +1,66 @@
 @use "../utils" as *;
 
-.ed_section_title {
-    font-size: 60px;
-    font-weight: 700;
-    color: #000;
-    line-height: 1.1;
+.ed_section {
+    &_subtitle {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 167%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #57595c;
+        margin: 0;
 
-    &_white {
-        color: #fff;
-    }
-    & br{
-        @media #{$xs}{
-            display: none; 
+        & i {
+            height: 10px;
+            width: 10px;
+            border-radius: 100%;
+            display: inline-block;
+            background-color: var(--ecom-theme-color);
+            margin-right: 5px;
         }
     }
 
-    @media #{$xl} {
-        font-size: 52px;
-    }
+    &_title {
+        font-size: 60px;
+        font-weight: 700;
+        color: #000;
+        line-height: 1.1;
 
-    @media #{$lg} {
-        font-size: 50px;
-    }
+        &_white {
+            color: #fff;
+        }
 
-    @media #{$md} {
-        font-size: 38px;
-        margin: 0;
-    }
-    @media #{$xs} {
-        font-size: 38px;
-    }
-    &_wrapper {
-        & p {
-            & br {
+        & br {
+            @media #{$xs} {
                 display: none;
             }
         }
+
+        @media #{$xl} {
+            font-size: 52px;
+        }
+
+        @media #{$lg} {
+            font-size: 50px;
+        }
+
+        @media #{$md} {
+            font-size: 38px;
+            margin: 0;
+        }
+
+        @media #{$xs} {
+            font-size: 38px;
+        }
+
+        &_wrapper {
+            & p {
+                & br {
+                    display: none;
+                }
+            }
+        }
     }
+
 }
