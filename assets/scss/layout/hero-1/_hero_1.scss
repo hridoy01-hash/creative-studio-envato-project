@@ -6,6 +6,7 @@
     font-family: var(--ecom-heading-font);
     position: relative;
     z-index: 1;
+    background-size: cover;
 
     @media #{$md} {
         padding: 265px 0px 170px 0px;

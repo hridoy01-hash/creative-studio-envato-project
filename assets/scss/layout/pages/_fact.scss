@@ -1,4 +1,4 @@
-@use "../../utils"as *;
+@use "../../utils" as *;
 
 .custom-row {
     display: flex;
@@ -33,6 +33,36 @@
             color: #fff;
             display: inline-block;
             margin-top: 28px;
+        }
+    }
+
+    &_2 {
+        .ed_fact_icon {
+            & i {
+                font-size: 100px;
+                color: var(--ecom-body-color);
+                display: inline-flex;
+            }
+        }
+
+        .ed_fact_title {
+            font-family: var(--ecom-heading-font);
+            font-weight: 400;
+            font-size: 30px;
+            color: var(--ed-common-black);
+            margin: 0;
+        }
+
+        .ed_fact_text {
+            & span {
+                font-family: var(--ecom-heading-font);
+                font-weight: 400;
+                font-size: 100px;
+                line-height: 1;
+                color: var(--ecom-black);
+                display: inline-block;
+                margin-top: 28px;
+            }
         }
     }
 }
