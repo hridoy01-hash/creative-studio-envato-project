@@ -9152,6 +9152,38 @@ img {
   padding: 300px 30px;
 }
 
+.ed_accordion_body {
+  margin: 0px 30px;
+  border-top: 1px solid var(--ecom-body-color);
+  padding-top: 20px;
+}
+.ed_accordion_button {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #0a0e1a;
+  width: 100%;
+  padding: 22px 30px;
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ed_accordion_button span {
+  transition: all 0.3s linear;
+}
+.ed_accordion_button span i {
+  font-size: 18px;
+  color: var(--ecom-body-color);
+  margin-right: 20px;
+}
+.ed_accordion_button.collapsed span {
+  transform: rotate(-90deg);
+}
+.ed_accordion_item {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
 .ed_hero_area {
   padding: 280px 0px 180px 0px;
   font-family: var(--ecom-heading-font);
