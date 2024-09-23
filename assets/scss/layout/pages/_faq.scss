@@ -12,19 +12,19 @@
         line-height: 1.5;
         color: #0a0e1a;
         width: 100%;
-        padding: 22px 30px;
+        padding: 20px 30px;
         text-align: start;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         & span {
-            transition: all 0.3s linear;
+            margin-right: 20px;
+            transition: 0.05s linear;
 
             & i {
                 font-size: 18px;
                 color: var(--ecom-body-color);
-                margin-right: 20px;
             }
         }
 
@@ -39,4 +39,15 @@
         border: 1px solid #000;
         border-radius: 10px;
     }
+}
+
+.ed_faq_bg {
+    position: absolute;
+    left: 0;
+    width: calc(50% - 65px); 
+    
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
