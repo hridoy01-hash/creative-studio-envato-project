@@ -75,7 +75,7 @@ img {
 }
 
 .ed_uppercase {
-	text-transform: uppercase; 
+	text-transform: uppercase;
 }
 
 // @__________brand scrolling animation _________@
@@ -97,4 +97,10 @@ img {
 .bg_position {
 	background-position: bottom;
 	background-repeat: no-repeat;
+}
+
+// faq
+.ed_custom_border {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
 }

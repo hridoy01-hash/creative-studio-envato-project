@@ -1,5 +1,10 @@
 @use "../../utils" as *;
 
+.ed_faq_wrapper {
+    padding: 15px 0px;
+
+}
+
 .ed_accordion {
     &_body {
         margin: 0px 30px;
@@ -44,8 +49,7 @@
 .ed_faq_bg {
     position: absolute;
     left: 0;
-    width: calc(50% - 65px); 
-    
+    width: calc(50% - 65px);
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;

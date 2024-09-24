@@ -641,6 +641,11 @@ img {
   background-repeat: no-repeat;
 }
 
+.ed_custom_border {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
 /*--
     - Margin & Padding
 -----------------------------------------*/
@@ -8578,9 +8583,28 @@ img {
   }
 }
 
+.ed_team_thumb {
+  position: relative;
+}
 .ed_team_thumb img {
   border-radius: 15px;
   width: 100%;
+}
+.ed_team_thumb_2 {
+  margin-bottom: 20px;
+}
+.ed_team_thumb_2 img {
+  transition: 0.3s linear;
+}
+.ed_team_thumb_border {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--ecom-body-color);
+  left: -10px;
+  top: -10px;
+  border-radius: 10px;
+  z-index: -5;
 }
 @media only screen and (min-width: 1400px) and (max-width: 1600px), only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .ed_team_info {
@@ -8609,6 +8633,40 @@ img {
 .ed_team_social a:hover {
   color: var(--ecom-theme-color);
 }
+.ed_team_social_2 {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 8px;
+  align-content: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s, top 0.3s;
+}
+.ed_team_social_2 a {
+  height: 50px;
+  width: 50px;
+  display: inline-block;
+  background: #fff;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  margin-right: unset;
+  transition: 0.2s linear;
+}
+.ed_team_social_2 a i {
+  font-size: 22px;
+  color: #0A0E1A;
+}
+.ed_team_social_2 a:hover {
+  background-color: var(--ecom-theme-color);
+}
+.ed_team_social_2 a:hover i {
+  color: var(--ecom-white);
+}
 .ed_team_title {
   font-size: 30px;
   margin-bottom: 10px;
@@ -8617,6 +8675,14 @@ img {
   .ed_team_title {
     font-size: 20px;
   }
+}
+.ed_team:hover .ed_team_social_2 {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+}
+.ed_team:hover .ed_team_thumb_2 a img {
+  filter: blur(1.5px);
 }
 
 .ed_team_slide_btn {
@@ -9150,6 +9216,10 @@ img {
 
 .ed_video_area {
   padding: 300px 30px;
+}
+
+.ed_faq_wrapper {
+  padding: 15px 0px;
 }
 
 .ed_accordion_body {
