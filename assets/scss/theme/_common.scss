@@ -54,8 +54,18 @@ img {
 	background-color: var(--ecom-theme-color);
 }
 
-.br_20 {
-	border-radius: 20px;
+.br {
+	&_20 {
+		border-radius: 20px;
+	}
+
+	&_15 {
+		border-radius: 15px;
+	}
+
+	&_10 {
+		border-radius: 10px;
+	}
 }
 
 .ed_nblue_bg {

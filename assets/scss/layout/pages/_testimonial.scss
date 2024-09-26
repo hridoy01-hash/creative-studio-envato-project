@@ -23,9 +23,34 @@
         }
     }
 
+    &_text {
+        font-size: 60px;
+        color: var(--ecom-white);
+        line-height: 1.2;
+
+        & i {
+            font-size: 42px;
+            color: var(--ecom-theme-sec-color);
+        }
+    }
+
     &_name {
         font-size: 30px;
         margin-bottom: 5px;
+    }
+
+    &_2 {
+        &_thumb {
+            & img {}
+        }
+
+        &_info {
+            & .info_name {
+                color: var(--ecom-white);
+                font-size: 30px;
+                line-height: 1.10;
+            }
+        }
     }
 
     &_desgin {
@@ -95,6 +120,11 @@
     transform: rotate(-180deg);
 }
 
+.flip_rotated {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
 .ed_testimonial_btn {
     position: absolute;
     left: -100px;
@@ -110,14 +140,15 @@
     @media #{$xl } {
         left: 50%;
         top: inherit;
-        bottom: -19%;  
+        bottom: -19%;
         z-index: 10;
         transform: translateX(-50%);
     }
+
     @media #{$md} {
         left: 50%;
         top: inherit;
-        bottom: -2%; 
+        bottom: -2%;
         z-index: 10;
         transform: translateX(-50%);
     }
@@ -138,14 +169,14 @@
             top: inherit;
             bottom: -4%;
             z-index: 10;
-            transform: translate(50%,100%);
+            transform: translate(50%, 100%);
         }
 
         @media #{$xs} {
-            left: 38%; 
+            left: 38%;
             top: inherit;
             bottom: -42px;
-            transform: translate(-22%, 50%); 
+            transform: translate(-22%, 50%);
         }
     }
 

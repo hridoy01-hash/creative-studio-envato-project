@@ -601,6 +601,12 @@ img {
 .br_20 {
   border-radius: 20px;
 }
+.br_15 {
+  border-radius: 15px;
+}
+.br_10 {
+  border-radius: 10px;
+}
 
 .ed_nblue_bg {
   background-color: var(--ecom-nblue-color);
@@ -8739,9 +8745,23 @@ img {
     font-size: 40px;
   }
 }
+.ed_testimonial_text {
+  font-size: 60px;
+  color: var(--ecom-white);
+  line-height: 1.2;
+}
+.ed_testimonial_text i {
+  font-size: 42px;
+  color: var(--ecom-theme-sec-color);
+}
 .ed_testimonial_name {
   font-size: 30px;
   margin-bottom: 5px;
+}
+.ed_testimonial_2_info .info_name {
+  color: var(--ecom-white);
+  font-size: 30px;
+  line-height: 1.1;
 }
 .ed_testimonial_desgin {
   color: #57595c;
@@ -8806,6 +8826,11 @@ img {
 
 .flaticon-right-arrow.ed_rotated_180 {
   transform: rotate(-180deg);
+}
+
+.flip_rotated {
+  display: inline-block;
+  transform: scaleX(-1);
 }
 
 .ed_testimonial_btn {
