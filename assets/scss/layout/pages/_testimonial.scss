@@ -1,5 +1,20 @@
 @use "../../utils" as *;
 
+.ed_testimonial_area_shape {
+    &_1 {
+        position: absolute;
+        right: 317px;
+        bottom: 110px;
+    }
+
+    &_2 {
+        position: absolute;
+        top: 130px;
+        right: 151px;
+    }
+
+}
+
 .ed_testimonial {
     &_desc {
         font-size: 100px;
@@ -39,16 +54,29 @@
         margin-bottom: 5px;
     }
 
-    &_2 {
+    &_author_2 {
         &_thumb {
             & img {}
         }
 
         &_info {
+            margin-left: 30px;
+
             & .info_name {
                 color: var(--ecom-white);
                 font-size: 30px;
+                font-weight: 400;
                 line-height: 1.10;
+            }
+
+            & .info_deg {
+                margin-left: 0;
+                font-size: 17px;
+                line-height: 1.6;
+                color: var(--ecom-white);
+                opacity: 0.8;
+                margin-top: 10px;
+                display: inline-block;
             }
         }
     }
@@ -123,6 +151,8 @@
 .flip_rotated {
     display: inline-block;
     transform: scaleX(-1);
+    font-size: 42px;
+    color: var(--ecom-theme-sec-color);
 }
 
 .ed_testimonial_btn {
