@@ -8966,6 +8966,35 @@ img {
   display: inline-flex;
 }
 
+.ed_testimonial_arrow_btns-2 {
+  position: absolute;
+  left: 50%;
+  bottom: 25px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.ed_testimonial_arrow_btns-2 span {
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: var(--ecom-white);
+  opacity: 0.2;
+  display: inline-block;
+  margin: 0px 10px;
+}
+.ed_testimonial_btn_next-2 {
+  font-size: 52px;
+  color: var(--ecom-white);
+  opacity: 0.5;
+  transform: rotate(-180deg);
+}
+.ed_testimonial_btn_prev-2 {
+  font-size: 52px;
+  color: var(--ecom-white);
+  opacity: 0.5;
+}
+
 .ed_news_letter_margin {
   margin-top: -110px;
   position: relative;
