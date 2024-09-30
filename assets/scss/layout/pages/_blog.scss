@@ -43,4 +43,32 @@
             margin: 0 15px;
         }
     }
+
+    &_2 {
+        position: relative;
+        border: 1px solid var(--ecom-body-color);
+
+        &_thumb {
+            width: 200px;
+            flex: 0 0 auto;
+            transform: translateX(-12px);
+            margin-left: -3px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: -12px;
+
+            & img {
+                height: calc(100% + 24px);
+                object-fit: cover;
+            }
+        }
+
+        &_content {
+            padding-top: 25px;
+            padding-bottom: 27px;
+
+
+        }
+    }
 }

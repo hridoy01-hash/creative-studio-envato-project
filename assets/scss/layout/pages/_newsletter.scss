@@ -1,58 +1,85 @@
 @use "../../utils/" as *;
+
 .ed_news_letter {
     &_margin {
         margin-top: -110px;
         position: relative;
         z-index: 12;
     }
+
     &_bg {
         padding: 70px 80px;
         border-radius: 20px;
+
         @media #{$xl} {
             padding: 50px 70px;
         }
+
         @media #{$md} {
             padding: 40px 60px;
         }
+
         @media #{$xs} {
             padding: 30px 40px;
         }
+
+        &_2 {
+            padding: 70px 0px;
+            border-radius: 0;
+        }
     }
+
     &_box {
         @media #{$lg} {
             margin-top: 10px;
         }
+
         & form {
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
+
             @media #{$xs} {
                 display: block;
             }
         }
+
         & input {
             border-color: #fff;
             color: #fff;
+
             &:focus {
                 border-color: #ffffff;
             }
+
             @include ed_placeholder {
                 color: #fff;
             }
         }
+
         &_input {
             width: calc(100% - 206px);
+
             @media #{$xs} {
                 width: 100%;
                 margin-bottom: 20px;
             }
+
             & img {
                 position: absolute;
                 top: 23px;
                 right: 11px;
             }
+
+            & i {
+                position: absolute;
+                top: 23px;
+                right: 11px;
+                color: #000;
+            }
         }
+
         &_bgtext {
             position: absolute;
             color: #fff;
@@ -62,16 +89,38 @@
             font-size: 100px;
             line-height: 1;
             bottom: -30px;
+
             @media #{$xl} {
                 font-size: 70px;
                 bottom: -5px;
                 left: 80px;
             }
+
             @media #{$md} {
                 font-size: 60px;
                 bottom: -5px;
                 left: 70px;
             }
+        }
+    }
+
+    &_box_2 {
+        & input {
+            border-color: var(--ecom-body-color);
+            color: #000;
+
+            &:focus {
+                border-color: var(--ecom-body-color);
+            }
+
+            @include ed_placeholder {
+                color: #000;
+            }
+        }
+
+        &_bgtext {
+            color: #EEEBE6;
+            opacity: 1;
         }
     }
 }

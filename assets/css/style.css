@@ -598,6 +598,9 @@ img {
   background-color: var(--ecom-theme-color);
 }
 
+.br_5 {
+  border-radius: 5px;
+}
 .br_20 {
   border-radius: 20px;
 }
@@ -8769,6 +8772,10 @@ img {
   font-size: 30px;
   margin-bottom: 5px;
 }
+.ed_testimonial_author_2 {
+  position: relative;
+  z-index: -1;
+}
 .ed_testimonial_author_2_info {
   margin-left: 30px;
 }
@@ -8973,6 +8980,7 @@ img {
   display: flex;
   align-items: center;
   gap: 7px;
+  z-index: 11;
 }
 .ed_testimonial_arrow_btns-2 span {
   height: 12px;
@@ -9018,6 +9026,10 @@ img {
   .ed_news_letter_bg {
     padding: 30px 40px;
   }
+}
+.ed_news_letter_bg_2 {
+  padding: 70px 0px;
+  border-radius: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ed_news_letter_box {
@@ -9068,6 +9080,12 @@ img {
   top: 23px;
   right: 11px;
 }
+.ed_news_letter_box_input i {
+  position: absolute;
+  top: 23px;
+  right: 11px;
+  color: #000;
+}
 .ed_news_letter_box_bgtext {
   position: absolute;
   color: #fff;
@@ -9091,6 +9109,29 @@ img {
     bottom: -5px;
     left: 70px;
   }
+}
+.ed_news_letter_box_2 input {
+  border-color: var(--ecom-body-color);
+  color: #000;
+}
+.ed_news_letter_box_2 input:focus {
+  border-color: var(--ecom-body-color);
+}
+.ed_news_letter_box_2 input::-webkit-input-placeholder {
+  color: #000;
+}
+.ed_news_letter_box_2 input:-moz-placeholder {
+  color: #000;
+}
+.ed_news_letter_box_2 input::-moz-placeholder {
+  color: #000;
+}
+.ed_news_letter_box_2 input:-ms-input-placeholder {
+  color: #000;
+}
+.ed_news_letter_box_2_bgtext {
+  color: #EEEBE6;
+  opacity: 1;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -9292,6 +9333,28 @@ img {
   width: 2px;
   background-color: #57595C;
   margin: 0 15px;
+}
+.ed_blog_2 {
+  position: relative;
+  border: 1px solid var(--ecom-body-color);
+}
+.ed_blog_2_thumb {
+  width: 200px;
+  flex: 0 0 auto;
+  transform: translateX(-12px);
+  margin-left: -3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: -12px;
+}
+.ed_blog_2_thumb img {
+  height: calc(100% + 24px);
+  object-fit: cover;
+}
+.ed_blog_2_content {
+  padding-top: 25px;
+  padding-bottom: 27px;
 }
 
 .ed_video_area {

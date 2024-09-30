@@ -17,6 +17,23 @@
             prevEl: ".ed_testimonial_btn_prev",
         },
     });
+    // ed_testimonial slider
+    var swiper = new Swiper(".ed_testimonial_slide_active-2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        speed: 1500,
+        keyboard: {
+            enabled: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".ed_testimonial_btn_next-2",
+            prevEl: ".ed_testimonial_btn_prev-2",
+        },
+    });
 
     // ed brand scrool animation top
     var swiper_top = new Swiper(".ed_brand_scroll_active_top", {
